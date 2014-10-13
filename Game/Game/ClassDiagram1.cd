@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Game.Building" Collapsed="true">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAJAAAAAAgAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Building.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Castle" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Castle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Cost" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Cost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.GameObject" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.MovementException" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MovementException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Hero" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Player\Hero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Unit" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAACAEAAAAAAABAAAIAAAACAAAAAAgIAAAI=</HashCode>
+      <FileName>Units\Unit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Game.Field.BattlefieldCell" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Field\BattlefieldCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Field.Cell" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Field\Cell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Field.Map" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Field\Map.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Field.MapCell" Collapsed="true">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Field\MapCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Player.EnemyPlayer" Collapsed="true">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Player\EnemyPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Player.LivePlayer" Collapsed="true">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAQAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Player\LivePlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game.Player.Player" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Player\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BatteleField.Program" Collapsed="true">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Game.Interfaces.IMeleeAttackable" Collapsed="true">
+    <Position X="10.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMeleeAttackable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Game.Interfaces.IRangeAttackable" Collapsed="true">
+    <Position X="12.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRangeAttackable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Game.Interfaces.IUnit" Collapsed="true">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAACAAAAAAAAABAAAIAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Interfaces\IUnit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Game.Faction" Collapsed="true">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Faction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Game.WarUnits.HeavenUnits" Collapsed="true">
+    <Position X="12.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACgAAAAAAAAAAAAAAAAAEAAAAAAAAQAAAAAAAAEAA=</HashCode>
+      <FileName>Units\HeavenUnits.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Game.WarUnits.InfernoCreatures" Collapsed="true">
+    <Position X="14.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAgAAAEAgAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Units\InfernoCreatures.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
