@@ -1,7 +1,7 @@
 ﻿
 namespace Game
 {
-    enum Faction 
+    public enum Faction 
     {
         Heaven,
         Inferno,

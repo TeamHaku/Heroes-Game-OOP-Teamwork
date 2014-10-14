@@ -11,7 +11,7 @@ namespace Game.WarUnits
         Maniac,
         Cerberus,
         Lilim,
-        Breeder,
+        Lacerator,
         PitLord
     }
 }

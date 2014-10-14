@@ -2,13 +2,11 @@
 {
     class LivePlayer : Player
     {
-        public LivePlayer(Faction faction, Hero hero)
+        public LivePlayer(Faction faction, Hero hero, Castle castle)
+            : base(faction)
         {
-            this.Faction = faction;
             this.Hero = hero;
         }
-
-        public Faction Faction { get; private set; }
 
         public Hero Hero { get; private set; }
 

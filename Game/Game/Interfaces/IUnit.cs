@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Game.Interfaces
 {
+    using Game.Units;
+
     interface IUnit
     {
         Cost Cost { get; set; }
 
-        int Defence { get; set; }
+        PointsRange Defence { get; set; }
 
-        int Attack { get; set; }
+        PointsRange AttackPoints { get; set; }
 
         int HealthPoints { get; }
 
@@ -21,6 +18,7 @@ namespace Game.Interfaces
         // Method Move
 
         // Method Attack
-            
+        void Attack();
+
     }
 }

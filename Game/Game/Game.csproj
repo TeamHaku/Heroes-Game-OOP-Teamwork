@@ -66,6 +66,7 @@
     <Compile Include="Faction.cs" />
     <Compile Include="Units\HeavenUnits.cs" />
     <Compile Include="Units\InfernoCreatures.cs" />
+    <Compile Include="Units\PointsRange.cs" />
     <Compile Include="Units\Unit.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -10,14 +10,13 @@ namespace Game
     {
         public const string DeffaultHero = "Pesho";
 
-        public readonly Unit[] DeffaultWarUNits = new Unit[7];
+        
 
         private string name;
 
         // constructors
 
 
-        public Unit[] WarUnits { get; set; }
 
     }
 }

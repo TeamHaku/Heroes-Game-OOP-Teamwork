@@ -7,26 +7,36 @@ using System.Threading.Tasks;
 namespace Game
 {
     using Game.Interfaces;
+    using Game.Units;
 
-    public abstract class Unit : GameObject, IUnit
+    public class Unit : GameObject, IUnit
     {
-        private int attack;
-        private int defense;
+        private PointsRange attackPoints;
+        private PointsRange defence;
         private int healthPoints;
         private int squareMovements;
 
-        public Cost Cost { get; set; }
-
-        public int Defence
+        public Unit(PointsRange attackPoints, PointsRange defence, int healthPoints, int squareMovements, Cost cost)
         {
-            get { return this.defense; }
-            set { this.defense = value; }
+            this.AttackPoints = attackPoints;
+            this.Defence = defence;
+            this.HealthPoints = healthPoints;
+            this.SquareMovements = squareMovements;
+            this.Cost = cost;
         }
 
-        public int Attack
+        public Cost Cost { get; set; }
+
+        public PointsRange Defence
         {
-            get { return this.attack; }
-            set { this.attack = value; }
+            get { return this.defence; }
+            set { this.defence = value; }
+        }
+
+        public PointsRange AttackPoints
+        {
+            get { return this.attackPoints; }
+            set { this.attackPoints = value; }
         }
 
         public int HealthPoints
@@ -47,6 +57,11 @@ namespace Game
             {
                 this.squareMovements = value;
             }
+        }
+
+        public void Attack()
+        {
+            
         }
     }
 }

@@ -8,6 +8,11 @@ namespace Game.Player
 {
     class EnemyPlayer : Player
     {
+        public EnemyPlayer(Faction faction)
+            : base(faction)
+        {
+        }
+
         public ICollection<Unit> Units { get; set; }
     }
 }

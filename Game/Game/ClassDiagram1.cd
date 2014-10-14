@@ -38,14 +38,14 @@
   <Class Name="Game.Hero" Collapsed="true">
     <Position X="3.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAAAAAAAAAAQA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Player\Hero.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Game.Unit" Collapsed="true">
     <Position X="5.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAACAEAAAAAAABAAAIAAAACAAAAAAgIAAAI=</HashCode>
+      <HashCode>AAAAAAAAQAACAEAAAAAAARAAAIAAAAAAAAAAAwIAAAI=</HashCode>
       <FileName>Units\Unit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -53,7 +53,7 @@
   <Class Name="Game.Field.BattlefieldCell" Collapsed="true">
     <Position X="8.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>Field\BattlefieldCell.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -88,14 +88,14 @@
   <Class Name="Game.Player.LivePlayer" Collapsed="true">
     <Position X="3.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAQAAAAAQAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Player\LivePlayer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Game.Player.Player" Collapsed="true">
     <Position X="2.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
       <FileName>Player\Player.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -123,7 +123,7 @@
   <Interface Name="Game.Interfaces.IUnit" Collapsed="true">
     <Position X="14.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAACAAAAAAAAABAAAIAAAAAAAAAAAgAAAAA=</HashCode>
+      <HashCode>AAAAAAAAQAACAAAAAAAAABAAAIAAAAAAAAAAAwAAAAA=</HashCode>
       <FileName>Interfaces\IUnit.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -134,17 +134,10 @@
       <FileName>Faction.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Game.WarUnits.HeavenUnits" Collapsed="true">
-    <Position X="12.5" Y="3.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAACgAAAAAAAAAAAAAAAAAEAAAAAAAAQAAAAAAAAEAA=</HashCode>
-      <FileName>Units\HeavenUnits.cs</FileName>
-    </TypeIdentifier>
-  </Enum>
   <Enum Name="Game.WarUnits.InfernoCreatures" Collapsed="true">
     <Position X="14.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAABAAAAAAAAAAAAAAAgAAAEAgAAAAAAIAAAAAAAAA=</HashCode>
+      <HashCode>AAgABAAAAAAAAAAAAAAAgAAAEAgAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Units\InfernoCreatures.cs</FileName>
     </TypeIdentifier>
   </Enum>
