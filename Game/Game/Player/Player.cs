@@ -10,6 +10,7 @@ namespace Game.Player
     {
         public Faction Faction { get; private set; }
 
+        // Units - Number
         public Dictionary<Unit, int> WarUNits =
             new Dictionary<Unit, int>();
 

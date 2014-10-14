@@ -10,31 +10,16 @@ using System.Windows.Forms;
 
 namespace TestForm
 {
+    using Game.Field;
+
+    using TestForm.Properties;
+
     public partial class GameWindow : Form
     {
         public GameWindow()
         {
             this.InitializeComponent();
-            //this.DrawButtons();
-            this.DrawPicture();
-        }
-
-        private void DrawPicture()
-        {
-            for (int row = 0; row < 8; row++)
-            {
-                for (int col = 0; col < 10; col++)
-                {
-                    PictureBox pictureBox1 = new PictureBox();
-                    pictureBox1.BackgroundImage = global::TestForm.Properties.Resources.enemy;
-                    pictureBox1.Location = new Point(col * 25, row * 25);
-                    pictureBox1.Name = "pictureBox1";
-                    pictureBox1.Size = new System.Drawing.Size(25, 25);
-                    pictureBox1.TabIndex = 1;
-                    pictureBox1.TabStop = false;
-                    this.Controls.Add(pictureBox1);
-                }
-            }  
+            this.DrawButtons();
         }
 
         public void DrawButtons()
@@ -44,28 +29,77 @@ namespace TestForm
             {
                 for (int col = 0; col < 10; col++)
                 {
+                    //MapCell cell = new MapCell(2, 5, Resources.chest);
                     Button butt = new Button();
                     butt.BackColor = Color.White;
-                    butt.Image = global::TestForm.Properties.Resources.earth;
+                    if (col == 1 && row == 1)
+                    {
+                        butt.Image = Resources.Marksman;
+                        butt.Text = "12";
+                        butt.ForeColor = Color.Red;
+                        butt.TextAlign = ContentAlignment.BottomRight;
+                    }
+                    if (col == 1 && row == 3)
+                    {
+                        butt.Image = Resources.Marksman;
+                    }
+                    if (col == 1 && row == 5)
+                    {
+                        butt.Image = Resources.Marksman;
+                    }
+                    butt.BackgroundImageLayout = ImageLayout.Stretch;
                     butt.Location = new Point(col * 50, row * 50);
-                    butt.Name = "button1";
+                    butt.Name = string.Format("{0}-{1}", row, col);
                     butt.Size = new Size(50, 50);
-                    butt.TabIndex = 1;
-                    butt.TextAlign = ContentAlignment.TopLeft;
-                    butt.UseVisualStyleBackColor = false;
                     this.Controls.Add(butt);
                 }
-            }  
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void DrawMap()
         {
+            Map map = new Map(new MapCell[,]
+            {
+                {
+                    new MapCell(0, 0, Resources.enemy), 
+                    new MapCell(0, 1, Resources.enemy),
+                    new MapCell(0, 3, Resources.enemy),
+                    new MapCell(0, 4, Resources.enemy),
+                    new MapCell(0, 5, Resources.enemy),
+                    new MapCell(0, 6, Resources.enemy),
+                    new MapCell(0, 7, Resources.enemy),
+                    new MapCell(0, 8, Resources.enemy),
+                    new MapCell(0, 9, Resources.enemy),
+                    new MapCell(0, 10, Resources.enemy),
+                    new MapCell(0, 11, Resources.enemy),
+                    new MapCell(0, 12, Resources.enemy)
+                },
+
+                {
+                    new MapCell(1, 0, Resources.enemy), 
+                    new MapCell(1, 1, Resources.enemy),
+                    new MapCell(1, 3, Resources.enemy),
+                    new MapCell(1, 4, Resources.enemy),
+                    new MapCell(1, 5, Resources.enemy),
+                    new MapCell(1, 6, Resources.enemy),
+                    new MapCell(1, 7, Resources.enemy),
+                    new MapCell(1, 8, Resources.enemy),
+                    new MapCell(1, 9, Resources.enemy),
+                    new MapCell(1, 10, Resources.enemy),
+                    new MapCell(1, 11, Resources.enemy),
+                    new MapCell(1, 12, Resources.enemy)
+                }
+            });
+
+            //for (int row = 0; row < map.MapCells[0].; row++)
+            //{
+            //    for (int i = 0; i < UPPER; i++)
+            //    {
+                    
+            //    }
+            //}
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
