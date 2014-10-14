@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Game.Field
 {
-
-    sealed class Map
+    public sealed class Map
     {
         public Cell[,] MapCells { get; set; }
-
     }
 }

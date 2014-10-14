@@ -69,11 +69,17 @@
     <Compile Include="Units\PointsRange.cs" />
     <Compile Include="Units\Unit.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\chest.png" />
+    <Content Include="Images\earth.png" />
+    <Content Include="Images\enemy.png" />
+    <Content Include="Images\player.png" />
+    <Content Include="Images\stone.png" />
+    <Content Include="Images\tree.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
