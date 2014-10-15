@@ -1,5 +1,7 @@
 ﻿namespace Game.Units
 {
+    using TestForm.Properties;
+
     public static class InfernoCreatures
     {
         private static Unit maniac;
@@ -22,7 +24,8 @@
                    defence: new PointsRange(6, 14),
                    healthPoints: 23,
                    squareMovements: 5,
-                   cost: new Cost(95));
+                   cost: new Cost(95),
+                   image: Resources.Maniac);
             }
         }
 
@@ -40,7 +43,8 @@
                    defence: new PointsRange(5, 11),
                    healthPoints: 32,
                    squareMovements: 5,
-                   cost: new Cost(205));
+                   cost: new Cost(205),
+                   image: Resources.Cerberus);
             }
         }
 
@@ -58,7 +62,8 @@
                    defence: new PointsRange(7, 16),
                    healthPoints: 24,
                    squareMovements: 5,
-                   cost: new Cost(150));
+                   cost: new Cost(150),
+                   image: Resources.Lilim);
             }
         }
 
@@ -76,7 +81,8 @@
                    defence: new PointsRange(14, 28),
                    healthPoints: 80,
                    squareMovements: 6,
-                   cost: new Cost(615));
+                   cost: new Cost(615),
+                   image: Resources.Lacerator);
             }
         }
 
@@ -94,7 +100,8 @@
                    defence: new PointsRange(31, 69),
                    healthPoints: 290,
                    squareMovements: 6,
-                   cost: new Cost(2195));
+                   cost: new Cost(2195),
+                   image: Resources.PitLord);
             }
         }
 

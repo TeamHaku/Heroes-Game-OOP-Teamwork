@@ -43,6 +43,12 @@ namespace TestForm
                     butt.Name = string.Format("{0}-{1}", row, col);
                     butt.Size = new Size(50, 50);
                     this.Controls.Add(butt);
+
+                    if (row == 0) butt.BackgroundImage = global::TestForm.Properties.Resources.Celestial;
+                    if (row == 1) butt.BackgroundImage = global::TestForm.Properties.Resources.Crossbowman;
+                    if (row == 2) butt.BackgroundImage = global::TestForm.Properties.Resources.Griffin;
+                    if (row == 3) butt.BackgroundImage = global::TestForm.Properties.Resources.Sentinel;
+                    if (row == 4) butt.BackgroundImage = global::TestForm.Properties.Resources.Sister;
                 }
             }
         }

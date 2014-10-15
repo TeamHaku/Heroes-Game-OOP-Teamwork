@@ -1,5 +1,7 @@
 ﻿namespace Game.Units
 {
+    using TestForm.Properties;
+
     public static class HeavenUnits
     {
         private static Unit sentinel;
@@ -22,7 +24,8 @@
                    defence: new PointsRange(7, 16),
                    healthPoints: 25,
                    squareMovements: 5,
-                   cost: new Cost(75));
+                   cost: new Cost(75),
+                   image: Resources.Sentinel);
             }
         }
 
@@ -40,7 +43,8 @@
                    defence: new PointsRange(3, 7),
                    healthPoints: 20,
                    squareMovements: 5,
-                   cost: new Cost(110));
+                   cost: new Cost(110),
+                   image: Resources.Crossbowman);
             }
         }
 
@@ -58,7 +62,8 @@
                    defence: new PointsRange(1, 2),
                    healthPoints: 17,
                    squareMovements: 5,
-                   cost: new Cost(105));
+                   cost: new Cost(105),
+                   image: Resources.Sister);
             }
         }
 
@@ -76,7 +81,8 @@
                    defence: new PointsRange(12, 25),
                    healthPoints: 80,
                    squareMovements: 6,
-                   cost: new Cost(490));
+                   cost: new Cost(490),
+                   image: Resources.Griffin);
             }
         }
 
@@ -94,7 +100,8 @@
                    defence: new PointsRange(40, 57),
                    healthPoints: 325,
                    squareMovements: 6,
-                   cost: new Cost(2190));
+                   cost: new Cost(2190),
+                   image: Resources.Celestial);
             }
         }
 

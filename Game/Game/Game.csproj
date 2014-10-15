@@ -109,6 +109,16 @@
     <Content Include="Images\chest.png" />
     <Content Include="Images\earth.png" />
     <Content Include="Images\enemy.png" />
+    <Content Include="Images\Heaven\Celestial-s.png" />
+    <Content Include="Images\Heaven\Crossbowman-s.png" />
+    <Content Include="Images\Heaven\Griffin-s.png" />
+    <Content Include="Images\Heaven\Sentinel-s.png" />
+    <Content Include="Images\Heaven\Sister-s.png" />
+    <Content Include="Images\Inferno\Cerberus-s.png" />
+    <Content Include="Images\Inferno\Lacerator-s.png" />
+    <Content Include="Images\Inferno\Lilim-s.png" />
+    <Content Include="Images\Inferno\Maniac-s.png" />
+    <Content Include="Images\Inferno\PitLord-s.png" />
     <Content Include="Images\player.png" />
     <Content Include="Images\stone.png" />
     <Content Include="Images\tree.png" />

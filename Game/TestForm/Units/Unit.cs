@@ -18,13 +18,14 @@ namespace Game
         private int healthPoints;
         private int squareMovements;
 
-        public Unit(PointsRange attackPoints, PointsRange defence, int healthPoints, int squareMovements, Cost cost)
+        public Unit(PointsRange attackPoints, PointsRange defence, int healthPoints, int squareMovements, Cost cost, Image image)
         {
             this.AttackPoints = attackPoints;
             this.Defence = defence;
             this.HealthPoints = healthPoints;
             this.SquareMovements = squareMovements;
             this.Cost = cost;
+            this.Image = image;
         }
 
         public Cost Cost { get; set; }
