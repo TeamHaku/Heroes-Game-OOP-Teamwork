@@ -27,7 +27,7 @@ namespace TestForm
 
         private void InitializeGame()
         {
-            LivePlayer livePlayer = new LivePlayer(Faction.Heaven, );
+            //LivePlayer livePlayer = new LivePlayer(Faction.Heaven, );
         }
 
         public void DrawBattlefiled()

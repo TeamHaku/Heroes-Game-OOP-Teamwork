@@ -8,14 +8,14 @@ namespace Game
 {
     class Hero : GameObject
     {
-        public static Hero DeffaultHero
-        {
-            get;
-            set
-            {
-                 new Hero(deffaultHeroName)
-            }
-        }
+        //public static Hero DeffaultHero
+        //{
+        //    get;
+        //    set
+        //    {
+        //         new Hero(deffaultHeroName)
+        //    }
+        //}
 
         private const string deffaultHeroName = "Pesho";
         public string Name { get; set; }
