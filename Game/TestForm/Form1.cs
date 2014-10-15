@@ -10,7 +10,9 @@ using System.Windows.Forms;
 
 namespace TestForm
 {
+    using Game;
     using Game.Field;
+    using Game.Player;
 
     using TestForm.Properties;
 
@@ -19,34 +21,23 @@ namespace TestForm
         public GameWindow()
         {
             this.InitializeComponent();
-            this.DrawButtons();
+            this.DrawBattlefiled();
+            this.InitializeGame();
         }
 
-        public void DrawButtons()
+        private void InitializeGame()
         {
-            // draw hor
+            LivePlayer livePlayer = new LivePlayer(Faction.Heaven, );
+        }
+
+        public void DrawBattlefiled()
+        {
             for (int row = 0; row < 8; row++)
             {
                 for (int col = 0; col < 10; col++)
                 {
-                    //MapCell cell = new MapCell(2, 5, Resources.chest);
                     Button butt = new Button();
                     butt.BackColor = Color.White;
-                    if (col == 1 && row == 1)
-                    {
-                        butt.Image = Resources.Marksman;
-                        butt.Text = "12";
-                        butt.ForeColor = Color.Red;
-                        butt.TextAlign = ContentAlignment.BottomRight;
-                    }
-                    if (col == 1 && row == 3)
-                    {
-                        butt.Image = Resources.Marksman;
-                    }
-                    if (col == 1 && row == 5)
-                    {
-                        butt.Image = Resources.Marksman;
-                    }
                     butt.BackgroundImageLayout = ImageLayout.Stretch;
                     butt.Location = new Point(col * 50, row * 50);
                     butt.Name = string.Format("{0}-{1}", row, col);
