@@ -8,15 +8,22 @@ namespace Game.Player
 {
     public abstract class Player
     {
-        public Faction Faction { get; private set; }
-
         // Units - Number
-        public Dictionary<Unit, int> WarUNits =
+        private Dictionary<Unit, int> warUnits =
             new Dictionary<Unit, int>();
 
-        protected Player(Faction faction)
+        protected Player(Faction faction, Dictionary<Unit, int> warUnits)
         {
             this.Faction = faction;
+            this.WarUnits = warUnits;
+        }
+
+        public Faction Faction { get; private set; }
+
+        public Dictionary<Unit, int> WarUnits
+        {
+            get { return this.warUnits; }
+            set { this.warUnits = value; }
         }
     }
 }

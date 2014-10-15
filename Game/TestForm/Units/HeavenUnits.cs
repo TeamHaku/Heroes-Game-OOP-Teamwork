@@ -1,5 +1,7 @@
 ﻿namespace Game.Units
 {
+    using System.Collections.Generic;
+
     using TestForm.Properties;
 
     public static class HeavenUnits
@@ -9,6 +11,7 @@
         private static Unit sister;
         private static Unit griffin;
         private static Unit celestial;
+        private static Dictionary<Unit, int> deffalutHeavenUnits;   
 
         public static Unit Sentinel
         {
@@ -104,6 +107,21 @@
                    image: Resources.Celestial);
             }
         }
+        public static Dictionary<Unit, int> DeffaultHeavenUnits
+        {
+            get
+            {
+                return deffalutHeavenUnits;
+            }
 
+            private set
+            {
+                deffalutHeavenUnits = new Dictionary<Unit, int>()
+                {
+                    { Sentinel, 20 },
+                    { Crossbowman, 20 }
+                };
+            }
+        }
     }
 }

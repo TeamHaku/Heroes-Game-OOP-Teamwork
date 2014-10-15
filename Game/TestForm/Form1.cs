@@ -13,6 +13,7 @@ namespace TestForm
     using Game;
     using Game.Field;
     using Game.Player;
+    using Game.Units;
 
     using TestForm.Properties;
 
@@ -27,7 +28,10 @@ namespace TestForm
 
         private void InitializeGame()
         {
-            //LivePlayer livePlayer = new LivePlayer(Faction.Heaven, );
+            LivePlayer player = new LivePlayer(
+                    Faction.Heaven,
+                    Hero.DeffaultHero,
+                    HeavenUnits.DeffaultHeavenUnits);
         }
 
         public void DrawBattlefiled()

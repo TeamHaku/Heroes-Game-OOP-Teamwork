@@ -9,7 +9,7 @@ namespace Game.Player
     class EnemyPlayer : Player
     {
         public EnemyPlayer(Faction faction)
-            : base(faction)
+            : base(faction, new Dictionary<Unit, int>())
         {
         }
 

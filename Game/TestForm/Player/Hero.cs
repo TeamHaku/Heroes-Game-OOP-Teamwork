@@ -8,22 +8,27 @@ namespace Game
 {
     class Hero : GameObject
     {
-        //public static Hero DeffaultHero
-        //{
-        //    get;
-        //    set
-        //    {
-        //         new Hero(deffaultHeroName)
-        //    }
-        //}
+        private const string DeffaultHeroName = "Pesho";
+        private static Hero deffalutHero;
 
-        private const string deffaultHeroName = "Pesho";
-        public string Name { get; set; }
-
-        public Hero(string name)
+        public Hero(string name = DeffaultHeroName)
+            : base(name, 0, 0)
         {
-            this.Name = name;
         }
+
+        public static Hero DeffaultHero
+        {
+            get
+            {
+                return deffalutHero;
+            }
+
+            set
+            {
+                deffalutHero = new Hero();
+            }
+        }
+
 
     }
 }

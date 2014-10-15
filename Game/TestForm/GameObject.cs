@@ -14,6 +14,13 @@ namespace Game
             get { return this.name; }
             set { this.name = value; }
         }
+
+        protected GameObject(string name, int x, int y)
+        {
+            this.name = name;
+            this.X = x;
+            this.Y = y;
+        }
            
     }
 }
