@@ -63,6 +63,16 @@ namespace TestForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap castle {
+            get {
+                object obj = ResourceManager.GetObject("castle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Celestial {
             get {
                 object obj = ResourceManager.GetObject("Celestial", resourceCulture);
@@ -123,6 +133,16 @@ namespace TestForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gold {
+            get {
+                object obj = ResourceManager.GetObject("gold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Griffin {
             get {
                 object obj = ResourceManager.GetObject("Griffin", resourceCulture);
@@ -146,6 +166,16 @@ namespace TestForm.Properties {
         internal static System.Drawing.Bitmap Lilim {
             get {
                 object obj = ResourceManager.GetObject("Lilim", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mainmenu_background {
+            get {
+                object obj = ResourceManager.GetObject("mainmenu-background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

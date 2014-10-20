@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Game
+namespace TestForm
 {
     class Hero : GameObject
     {
@@ -14,6 +14,7 @@ namespace Game
         public Hero(string name = DeffaultHeroName)
             : base(name, 0, 0)
         {
+            DeffaultHero = deffalutHero;
         }
 
         public static Hero DeffaultHero

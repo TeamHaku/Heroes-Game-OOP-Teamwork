@@ -1,4 +1,4 @@
-﻿namespace Game.Units
+﻿namespace TestForm.Units
 {
     using TestForm.Properties;
 

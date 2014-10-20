@@ -1,5 +1,4 @@
-﻿
-namespace Game
+﻿namespace TestForm
 {
     public enum Faction 
     {

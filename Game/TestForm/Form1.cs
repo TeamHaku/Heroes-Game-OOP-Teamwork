@@ -14,15 +14,16 @@ using System.Windows.Forms;
 
 namespace TestForm
 {
-    using Game;
-    using Game.Field;
-    using Game.Player;
-    using Game.Units;
-
+    using TestForm;
+    using TestForm.Field;
+    using TestForm.Player;
+    using TestForm.Units;
     using TestForm.Properties;
     
     public partial class GameWindow : Form
     {
+        LivePlayer player;
+
         public GameWindow()
         {
             this.InitializeComponent();
@@ -33,10 +34,13 @@ namespace TestForm
 
         private void InitializeGame()
         {
-            LivePlayer player = new LivePlayer(
-                Faction.Heaven,
+            player = new LivePlayer(
+                MainMenu.ChosenFaction,
                 Hero.DeffaultHero,
-                HeavenUnits.DeffaultHeavenUnits);
+                HeavenUnits.DeffaultHeavenUnits,
+                1000);
+
+            //player.Hero.Name = MainMenu.Nickname;
         }
 
         public void DrawBattlefiled()
@@ -64,48 +68,17 @@ namespace TestForm
 
         public void DrawMap()
         {
-            //Map map = new Map(new MapCell[,]
-            //{
-            //    {
-            //        new MapCell(0, 0, Resources.enemy), 
-            //        new MapCell(0, 1, Resources.enemy),
-            //        new MapCell(0, 3, Resources.enemy),
-            //        new MapCell(0, 4, Resources.enemy),
-            //        new MapCell(0, 5, Resources.enemy),
-            //        new MapCell(0, 6, Resources.enemy),
-            //        new MapCell(0, 7, Resources.enemy),
-            //        new MapCell(0, 8, Resources.enemy),
-            //        new MapCell(0, 9, Resources.enemy),
-            //        new MapCell(0, 10, Resources.enemy),
-            //        new MapCell(0, 11, Resources.enemy),
-            //        new MapCell(0, 12, Resources.enemy)
-            //    },
-
-            //    {
-            //        new MapCell(1, 0, Resources.enemy), 
-            //        new MapCell(1, 1, Resources.enemy),
-            //        new MapCell(1, 3, Resources.enemy),
-            //        new MapCell(1, 4, Resources.enemy),
-            //        new MapCell(1, 5, Resources.enemy),
-            //        new MapCell(1, 6, Resources.enemy),
-            //        new MapCell(1, 7, Resources.enemy),
-            //        new MapCell(1, 8, Resources.enemy),
-            //        new MapCell(1, 9, Resources.enemy),
-            //        new MapCell(1, 10, Resources.enemy),
-            //        new MapCell(1, 11, Resources.enemy),
-            //        new MapCell(1, 12, Resources.enemy)
-            //    }
-            //});
             try
             {
                 using (StreamReader sr = new StreamReader("../../../map.txt"))
                 {
-                    for (int row = 0; row < 8; row++)
+                    for (int row = 0; row < 20; row++)
                     {
                         String line = sr.ReadLine();
-                        for (int col = 0; col < 10; col++)
+                        for (int col = 0; col < 20; col++)
                         {
                             MapCell cell = new MapCell(row, col, Resources.earth);
+                            //butt.BackgroundImageLayout = ImageLayout.Stretch;
                             string name = "not recognized";
                             switch (line[col])
                             {
@@ -118,7 +91,7 @@ namespace TestForm
                                     name = "stone";
                                     break;
                                 case 'C':
-                                    cell.Image = Resources.Sister;
+                                    cell.Image = Resources.castle;
                                     name = "castle";
                                     break;
                                 case 'H':
@@ -156,11 +129,12 @@ namespace TestForm
         {
             Button butt = new Button();
             butt.BackColor = Color.White;
-            butt.Image = cell.Image;
+            butt.FlatStyle = 0;
             butt.BackgroundImageLayout = ImageLayout.Stretch;
-            butt.Location = new Point(cell.Y*50, cell.X*50);
+            butt.Image = cell.Image;
+            butt.Location = new Point(cell.Y*30, cell.X*30);
             butt.Name = name; //string.Format("{0}-{1}", cell.Y, cell.X);
-            butt.Size = new Size(50, 50);
+            butt.Size = new Size(30, 30);
             butt.Click += new EventHandler(this.button_Clicked);
             return butt;
         }
@@ -168,8 +142,8 @@ namespace TestForm
         private void button_Clicked(object sender, EventArgs e)
         {
             Button triggeredButton = (Button) sender;
-            int x = triggeredButton.Location.X/50;
-            int y = triggeredButton.Location.Y/50;
+            int x = triggeredButton.Location.X/30;
+            int y = triggeredButton.Location.Y/30;
             string type = triggeredButton.Name;
             string log = "nothing";
 
@@ -202,15 +176,26 @@ namespace TestForm
             }
             else if (type == "castle")
             {
+                var castle = new CastleView(player.Gold);
+
+                castle.Show();
+
                 log = "enter your castle";
             }
             else if (type == "chest")
             {
                 log = "collect tresure if path available";
+
+                player.Gold += 1000;
+
+                var parsedGold = int.Parse(textBox1.Text);
+
+                parsedGold += 1000;
+
+                textBox1.Text = parsedGold.ToString();
             }
+
             this.gameLog.Text = log + Environment.NewLine + this.gameLog.Text;
-
         }
-
     }
 }

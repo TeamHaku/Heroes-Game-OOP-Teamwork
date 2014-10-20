@@ -1,7 +1,7 @@
 ﻿
-namespace Game.Interfaces
+namespace TestForm.Interfaces
 {
-    using Game.Units;
+    using TestForm.Units;
 
     interface IUnit
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace Game
+namespace TestForm
 {
     public abstract class GameObject
     {

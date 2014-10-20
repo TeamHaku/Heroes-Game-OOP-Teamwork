@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Game
+namespace TestForm
 {
     using System.Drawing;
 
-    using Game.Interfaces;
-    using Game.Units;
+    using TestForm.Interfaces;
+    using TestForm.Units;
 
     public class Unit : GameObject, IUnit
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Game.Field
+namespace TestForm.Field
 {
     class BattlefieldCell : Cell
     {

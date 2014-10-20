@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TestForm.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Castle.cs" />
+    <Compile Include="CastleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CastleView.Designer.cs">
+      <DependentUpon>CastleView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cost.cs" />
     <Compile Include="Faction.cs" />
     <Compile Include="Field\BattleField.cs" />
@@ -62,6 +71,12 @@
     <Compile Include="Interfaces\IMeleeAttackable.cs" />
     <Compile Include="Interfaces\IRangeAttackable.cs" />
     <Compile Include="Interfaces\IUnit.cs" />
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Player\EnemyPlayer.cs" />
     <Compile Include="Player\Hero.cs" />
     <Compile Include="Player\LivePlayer.cs" />
@@ -77,8 +92,14 @@
     <Compile Include="Units\InfernoCreatures.cs" />
     <Compile Include="Units\PointsRange.cs" />
     <Compile Include="Units\Unit.cs" />
+    <EmbeddedResource Include="CastleView.resx">
+      <DependentUpon>CastleView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -130,6 +151,15 @@
     <None Include="Resources\Inferno\Lilim.png" />
     <None Include="Resources\Inferno\Lacerator.png" />
     <None Include="Resources\Inferno\Cerberus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainmenu-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\castle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
