@@ -30,11 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CastleView));
             this.Unit1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.firstUnit = new System.Windows.Forms.TextBox();
             this.u1minus = new System.Windows.Forms.Button();
             this.u1plus = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.log = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,12 +49,12 @@
             this.Unit1.UseVisualStyleBackColor = true;
             this.Unit1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // firstUnit
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 150);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(117, 20);
-            this.textBox1.TabIndex = 1;
+            this.firstUnit.Location = new System.Drawing.Point(120, 150);
+            this.firstUnit.Name = "firstUnit";
+            this.firstUnit.Size = new System.Drawing.Size(117, 20);
+            this.firstUnit.TabIndex = 1;
             // 
             // u1minus
             // 
@@ -63,6 +64,7 @@
             this.u1minus.Size = new System.Drawing.Size(38, 30);
             this.u1minus.TabIndex = 2;
             this.u1minus.UseVisualStyleBackColor = true;
+            this.u1minus.Click += new System.EventHandler(this.u1minus_Click);
             // 
             // u1plus
             // 
@@ -72,6 +74,7 @@
             this.u1plus.Size = new System.Drawing.Size(38, 30);
             this.u1plus.TabIndex = 3;
             this.u1plus.UseVisualStyleBackColor = true;
+            this.u1plus.Click += new System.EventHandler(this.u1plus_Click);
             // 
             // pictureBox1
             // 
@@ -90,17 +93,26 @@
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "1200";
             // 
+            // log
+            // 
+            this.log.Location = new System.Drawing.Point(677, 176);
+            this.log.Name = "log";
+            this.log.Size = new System.Drawing.Size(124, 425);
+            this.log.TabIndex = 6;
+            this.log.Text = "";
+            // 
             // CastleView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.log);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.u1plus);
             this.Controls.Add(this.u1minus);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.firstUnit);
             this.Controls.Add(this.Unit1);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -116,10 +128,11 @@
         #endregion
 
         private System.Windows.Forms.Button Unit1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox firstUnit;
         private System.Windows.Forms.Button u1minus;
         private System.Windows.Forms.Button u1plus;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox log;
     }
 }
