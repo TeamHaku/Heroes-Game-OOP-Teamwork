@@ -6,12 +6,56 @@
 
     public static class HeavenUnits
     {
-        private static Unit sentinel;
-        private static Unit crossbowman;
-        private static Unit sister;
-        private static Unit griffin;
-        private static Unit celestial;
-        private static Dictionary<Unit, int> deffalutHeavenUnits;
+        private static Unit sentinel = new Unit(
+                   attackPoints: new PointsRange(2, 4),
+                   defence: new PointsRange(7, 16),
+                   healthPoints: 25,
+                   squareMovements: 5,
+                   cost: new Cost(75),
+                   image: Resources.Sentinel,
+                   name: "Sentienl");
+
+        private static Unit crossbowman = new Unit(
+                   attackPoints: new PointsRange(2, 5),
+                   defence: new PointsRange(3, 7),
+                   healthPoints: 20,
+                   squareMovements: 5,
+                   cost: new Cost(110),
+                   image: Resources.Crossbowman,
+                   name: "Crossbowman");
+
+        private static Unit sister = new Unit(
+                   attackPoints: new PointsRange(5, 7),
+                   defence: new PointsRange(1, 2),
+                   healthPoints: 17,
+                   squareMovements: 5,
+                   cost: new Cost(105),
+                   image: Resources.Sister,
+                   name: "Sister");
+
+        private static Unit griffin = new Unit(
+                   attackPoints: new PointsRange(14, 18),
+                   defence: new PointsRange(12, 25),
+                   healthPoints: 80,
+                   squareMovements: 6,
+                   cost: new Cost(490),
+                   image: Resources.Griffin,
+                   name: "Griffin");
+
+        private static Unit celestial = new Unit(
+                   attackPoints: new PointsRange(54, 56),
+                   defence: new PointsRange(40, 57),
+                   healthPoints: 325,
+                   squareMovements: 6,
+                   cost: new Cost(2190),
+                   image: Resources.Celestial,
+                   name: "Celestial");
+
+        private static Dictionary<Unit, int> deffaultnits = new Dictionary<Unit, int>
+                {
+                    { Sentinel, 20 },
+                    { Crossbowman, 20 }
+                };
 
         static HeavenUnits()
         {
@@ -19,7 +63,8 @@
             Crossbowman = crossbowman;
             Sister = sister;
             Griffin = griffin;
-            Celestial = celestial;
+            Sentinel = sentinel;
+            DeffaultUnits = deffaultnits;
         }
 
         public static Unit Sentinel
@@ -31,13 +76,7 @@
 
             private set
             {
-                sentinel = new Unit(
-                   attackPoints: new PointsRange(2, 4),
-                   defence: new PointsRange(7, 16),
-                   healthPoints: 25,
-                   squareMovements: 5,
-                   cost: new Cost(75),
-                   image: Resources.Sentinel);
+                sentinel = value;
             }
         }
 
@@ -50,13 +89,7 @@
 
             private set
             {
-                crossbowman = new Unit(
-                   attackPoints: new PointsRange(2, 5),
-                   defence: new PointsRange(3, 7),
-                   healthPoints: 20,
-                   squareMovements: 5,
-                   cost: new Cost(110),
-                   image: Resources.Crossbowman);
+                crossbowman = value;
             }
         }
 
@@ -69,13 +102,7 @@
 
             private set
             {
-                sister = new Unit(
-                   attackPoints: new PointsRange(5, 7),
-                   defence: new PointsRange(1, 2),
-                   healthPoints: 17,
-                   squareMovements: 5,
-                   cost: new Cost(105),
-                   image: Resources.Sister);
+                sister = value;
             }
         }
 
@@ -88,13 +115,7 @@
 
             private set
             {
-                griffin = new Unit(
-                   attackPoints: new PointsRange(14, 18),
-                   defence: new PointsRange(12, 25),
-                   healthPoints: 80,
-                   squareMovements: 6,
-                   cost: new Cost(490),
-                   image: Resources.Griffin);
+                griffin = value;
             }
         }
 
@@ -107,30 +128,22 @@
 
             private set
             {
-                celestial = new Unit(
-                   attackPoints: new PointsRange(54, 56),
-                   defence: new PointsRange(40, 57),
-                   healthPoints: 325,
-                   squareMovements: 6,
-                   cost: new Cost(2190),
-                   image: Resources.Celestial);
+                celestial = value;
             }
         }
-        public static Dictionary<Unit, int> DeffaultHeavenUnits
+
+        public static Dictionary<Unit, int> DeffaultUnits
         {
             get
             {
-                return deffalutHeavenUnits;
+                return deffaultnits;
             }
 
             private set
             {
-                deffalutHeavenUnits = new Dictionary<Unit, int>()
-                {
-                    { Sentinel, 20 },
-                    { Crossbowman, 20 }
-                };
+                deffaultnits = value;
             }
         }
+
     }
 }

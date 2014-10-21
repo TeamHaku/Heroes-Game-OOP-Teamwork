@@ -18,8 +18,8 @@ namespace TestForm
         private int healthPoints;
         private int squareMovements;
 
-        public Unit(PointsRange attackPoints, PointsRange defence, int healthPoints, int squareMovements, Cost cost, Image image) 
-            : base("No-name", 0, 0)
+        public Unit(PointsRange attackPoints, PointsRange defence, int healthPoints, int squareMovements, Cost cost, Image image, string name) 
+            : base(name, 0, 0)
         {
             this.AttackPoints = attackPoints;
             this.Defence = defence;
