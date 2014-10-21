@@ -51,7 +51,7 @@
                    image: Resources.Celestial,
                    name: "Celestial");
 
-        private static Dictionary<Unit, int> deffaultnits = new Dictionary<Unit, int>
+        private static Dictionary<Unit, int> deffaultUnits = new Dictionary<Unit, int>
                 {
                     { Sentinel, 20 },
                     { Crossbowman, 20 }
@@ -64,7 +64,7 @@
             Sister = sister;
             Griffin = griffin;
             Sentinel = sentinel;
-            DeffaultUnits = deffaultnits;
+            DeffaultUnits = deffaultUnits;
         }
 
         public static Unit Sentinel
@@ -136,12 +136,12 @@
         {
             get
             {
-                return deffaultnits;
+                return deffaultUnits;
             }
 
             private set
             {
-                deffaultnits = value;
+                deffaultUnits = value;
             }
         }
 

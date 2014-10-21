@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace TestForm.Field
 {
-    class BattleField
+    public class BattleField
     {
-        public readonly BattlefieldCell[,] BattlefieldCells = new BattlefieldCell[8, 8];
+        public BattleField(BattlefieldCell[,] battlefield)
+        {
+            this.BattlefieldCells = battlefield;
+        }
+
+        public BattlefieldCell[,] BattlefieldCells { get; set; }
     }
 }

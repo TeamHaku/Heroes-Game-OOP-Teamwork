@@ -64,6 +64,7 @@
             Lilim = lilim;
             Lacerator = lacerator;
             PitLord = pitLord;
+            DeffaultUnits = deffaultUnits;
         }
 
         public static Unit Maniac
@@ -128,6 +129,19 @@
             private set
             {
                 pitLord = value;
+            }
+        }
+
+        public static Dictionary<Unit, int> DeffaultUnits
+        {
+            get
+            {
+                return deffaultUnits;
+            }
+
+            set
+            {
+                deffaultUnits = value;
             }
         }
 

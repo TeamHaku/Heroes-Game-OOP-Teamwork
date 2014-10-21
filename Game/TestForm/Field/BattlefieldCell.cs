@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace TestForm.Field
 {
-    class BattlefieldCell : Cell
+    public class BattlefieldCell : Cell
     {
         public Unit CellUnit { get; set; }
 
-        public BattlefieldCell(int x , int y, Unit unit = null)
+        public BattlefieldCell(int x, int y, Unit unit = null)
             : base(x, y)
         {
             this.CellUnit = unit;

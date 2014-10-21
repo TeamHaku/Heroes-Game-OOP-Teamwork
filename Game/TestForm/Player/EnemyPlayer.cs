@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace TestForm.Player
 {
-    class EnemyPlayer : Player
+    public class EnemyPlayer : Player
     {
-        public EnemyPlayer(Faction faction)
-            : base(faction, new Dictionary<Unit, int>())
+        public EnemyPlayer(Faction faction, Dictionary<Unit, int> units)
+            : base(faction, units)
         {
         }
 

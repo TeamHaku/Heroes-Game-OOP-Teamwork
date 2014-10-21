@@ -1,70 +1,66 @@
 ﻿#define DEBUG
-//#undef DEBUG
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TestForm
 {
-    using TestForm;
     using TestForm.Field;
     using TestForm.Player;
-    using TestForm.Units;
     using TestForm.Properties;
+    using TestForm.Units;
     
     public partial class GameWindow : Form
     {
-        public static LivePlayer player;
+        public static LivePlayer Player { get; set; }
+
+        public static List<EnemyPlayer> Enemies { get; set; }
 
         public GameWindow()
         {
             this.InitializeComponent();
-            //this.DrawBattlefiled();
             this.InitializeGame();
             this.DrawMap();
         }
 
         private void InitializeGame()
         {
-            player = new LivePlayer(
-                MainMenu.ChosenFaction,
-                Hero.DeffaultHero,
-                HeavenUnits.DeffaultHeavenUnits,
-                1000);
-
+            this.InitPlayer();
+            this.InitEnemyies();
             //player.Hero.Name = MainMenu.Nickname;
         }
 
-        public void DrawBattlefiled()
+        private void InitEnemyies()
         {
-            for (int row = 0; row < 8; row++)
+            Enemies = new List<EnemyPlayer>
             {
-                for (int col = 0; col < 10; col++)
-                {
-                    Button butt = new Button();
-                    butt.BackColor = Color.White;
-                    butt.BackgroundImageLayout = ImageLayout.Stretch;
-                    butt.Location = new Point(col*50, row*50);
-                    butt.Name = string.Format("{0}-{1}", row, col);
-                    butt.Size = new Size(50, 50);
-                    this.Controls.Add(butt);
-
-                    if (row == 0) butt.BackgroundImage = global::TestForm.Properties.Resources.Celestial;
-                    if (row == 1) butt.BackgroundImage = global::TestForm.Properties.Resources.Crossbowman;
-                    if (row == 2) butt.BackgroundImage = global::TestForm.Properties.Resources.Griffin;
-                    if (row == 3) butt.BackgroundImage = global::TestForm.Properties.Resources.Sentinel;
-                    if (row == 4) butt.BackgroundImage = global::TestForm.Properties.Resources.Sister;
-                }
-            }
+                new EnemyPlayer(Faction.Inferno, InfernoCreatures.DeffaultUnits)   
+            };
         }
+
+        private void InitPlayer()
+        {
+            Dictionary<Unit, int> units = new Dictionary<Unit, int>();
+            switch (MainMenu.ChosenFaction)
+            {
+                case Faction.Heaven:
+                    units = HeavenUnits.DeffaultUnits;
+                    break;
+                case Faction.Inferno:
+                    units = InfernoCreatures.DeffaultUnits;
+                    break;
+            }
+
+            Player = new LivePlayer(
+                MainMenu.ChosenFaction,
+                Hero.DeffaultHero,
+                units,
+                10000);
+        }
+
+        
 
         public void DrawMap()
         {
@@ -78,7 +74,6 @@ namespace TestForm
                         for (int col = 0; col < 20; col++)
                         {
                             MapCell cell = new MapCell(row, col, Resources.earth);
-                            //butt.BackgroundImageLayout = ImageLayout.Stretch;
                             string name = "not recognized";
                             switch (line[col])
                             {
@@ -112,7 +107,7 @@ namespace TestForm
                                     break;
                             }
 
-                            this.Controls.Add(generateButton(cell, name));
+                            this.Controls.Add(this.generateButton(cell, name));
                         }
                     }
                 }
@@ -132,7 +127,7 @@ namespace TestForm
             butt.FlatStyle = 0;
             butt.BackgroundImageLayout = ImageLayout.Stretch;
             butt.Image = cell.Image;
-            butt.Location = new Point(cell.Y*30, cell.X*30);
+            butt.Location = new Point(cell.Y * 30, cell.X * 30);
             butt.Name = name; //string.Format("{0}-{1}", cell.Y, cell.X);
             butt.Size = new Size(30, 30);
             butt.Click += new EventHandler(this.button_Clicked);
@@ -173,40 +168,32 @@ namespace TestForm
             else if (type == "enemy") //Or other enemy
             {
                 log = "fight";
+                var battlefield = new BattlfieldForm();
+                battlefield.Show();
+                this.WindowState = FormWindowState.Minimized;
+
+
             }
             else if (type == "castle")
             {
-                //var castle = new CastleView(player.Gold);
-
-                //castle.Show();
-
                 if (MainMenu.ChosenFaction == Faction.Inferno)
                 {
-                    var inferno = new InfernoCastle(player.Gold);
-
+                    var inferno = new InfernoCastle(Player.Gold);
                     inferno.Show();
                 }
                 else
                 {
-                    var heaven = new HeavenCastle(player.Gold);
-
+                    var heaven = new HeavenCastle(Player.Gold);
                     heaven.Show();
                 }
 
                 log = "enter your castle";
-                
             }
             else if (type == "chest")
             {
                 log = "collect tresure if path available";
-
-                player.Gold += 1000;
-
-                var parsedGold = int.Parse(textBox1.Text);
-
-                parsedGold += 1000;
-
-                textBox1.Text = parsedGold.ToString();
+                Player.Gold += 1000;
+                textBox1.Text = Player.Gold.ToString();
             }
 
             this.gameLog.Text = log + Environment.NewLine + this.gameLog.Text;

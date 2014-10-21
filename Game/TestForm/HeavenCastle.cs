@@ -11,15 +11,26 @@ using System.Windows.Forms;
 namespace TestForm
 {
     using TestForm.Units;
-    using TestForm.Player;
 
     public partial class HeavenCastle : Form
     {
         public HeavenCastle(int gold)
         {
             InitializeComponent();
-
             textBox6.Text = gold.ToString();
+            DisplayUnits();
         }
+
+        private void DisplayUnits()
+        {
+
+            foreach (var key in GameWindow.Player.WarUnits.Keys)
+            {
+                
+            }
+        }
+
+
+
     }
 }
