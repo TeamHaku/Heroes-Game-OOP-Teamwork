@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    class LivePlayer : Player
+    public class LivePlayer : Player
     {
         public LivePlayer(
             Faction faction,

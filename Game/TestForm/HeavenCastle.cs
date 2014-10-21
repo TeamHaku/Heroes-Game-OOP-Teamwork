@@ -11,18 +11,15 @@ using System.Windows.Forms;
 namespace TestForm
 {
     using TestForm.Units;
+    using TestForm.Player;
 
     public partial class HeavenCastle : Form
     {
-        public HeavenCastle()
+        public HeavenCastle(int gold)
         {
             InitializeComponent();
-            UnitsCost();
-        }
 
-        private void UnitsCost()
-        {
-            //textBox1.Text = HeavenUnits.Sentinel.Cost.ToString();
+            textBox6.Text = gold.ToString();
         }
     }
 }

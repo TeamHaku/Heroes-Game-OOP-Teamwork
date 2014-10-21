@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestForm
 {
-    class Hero : GameObject
+    public class Hero : GameObject
     {
         private const string DeffaultHeroName = "Pesho";
         private static Hero deffalutHero;

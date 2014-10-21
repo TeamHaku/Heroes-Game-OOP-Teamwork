@@ -44,47 +44,47 @@
             // 
             // textBoxX
             // 
-            this.textBoxX.Location = new System.Drawing.Point(619, 9);
+            this.textBoxX.Location = new System.Drawing.Point(652, 12);
             this.textBoxX.Name = "textBoxX";
-            this.textBoxX.Size = new System.Drawing.Size(100, 20);
+            this.textBoxX.Size = new System.Drawing.Size(116, 22);
             this.textBoxX.TabIndex = 0;
             // 
             // textBoxY
             // 
-            this.textBoxY.Location = new System.Drawing.Point(619, 35);
+            this.textBoxY.Location = new System.Drawing.Point(652, 40);
             this.textBoxY.Name = "textBoxY";
-            this.textBoxY.Size = new System.Drawing.Size(100, 20);
+            this.textBoxY.Size = new System.Drawing.Size(116, 22);
             this.textBoxY.TabIndex = 1;
             // 
             // textBoxType
             // 
-            this.textBoxType.Location = new System.Drawing.Point(619, 61);
+            this.textBoxType.Location = new System.Drawing.Point(652, 68);
             this.textBoxType.Name = "textBoxType";
-            this.textBoxType.Size = new System.Drawing.Size(100, 20);
+            this.textBoxType.Size = new System.Drawing.Size(116, 22);
             this.textBoxType.TabIndex = 2;
             // 
             // gameLog
             // 
-            this.gameLog.Location = new System.Drawing.Point(619, 100);
+            this.gameLog.Location = new System.Drawing.Point(652, 110);
             this.gameLog.Name = "gameLog";
-            this.gameLog.Size = new System.Drawing.Size(100, 346);
+            this.gameLog.Size = new System.Drawing.Size(116, 372);
             this.gameLog.TabIndex = 3;
             this.gameLog.Text = "";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(616, 84);
+            this.label1.Location = new System.Drawing.Point(649, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.Size = new System.Drawing.Size(70, 14);
             this.label1.TabIndex = 4;
             this.label1.Text = "Game Log:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(619, 568);
+            this.textBox1.Location = new System.Drawing.Point(658, 532);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(104, 22);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "1000";
             // 
@@ -92,19 +92,19 @@
             // 
             this.pictureBox1.BackgroundImage = global::TestForm.Properties.Resources.gold;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(645, 527);
+            this.pictureBox1.Location = new System.Drawing.Point(688, 488);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 35);
+            this.pictureBox1.Size = new System.Drawing.Size(42, 38);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // GameWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(731, 600);
+            this.ClientSize = new System.Drawing.Size(788, 601);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -112,6 +112,7 @@
             this.Controls.Add(this.textBoxType);
             this.Controls.Add(this.textBoxY);
             this.Controls.Add(this.textBoxX);
+            this.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GameWindow";

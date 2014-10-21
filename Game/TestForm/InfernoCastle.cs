@@ -12,9 +12,11 @@ namespace TestForm
 {
     public partial class InfernoCastle : Form
     {
-        public InfernoCastle()
+        public InfernoCastle(int gold)
         {
             InitializeComponent();
+
+            textBox6.Text = gold.ToString();
         }
     }
 }

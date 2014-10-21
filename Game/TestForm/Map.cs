@@ -22,7 +22,7 @@ namespace TestForm
     
     public partial class GameWindow : Form
     {
-        LivePlayer player;
+        public static LivePlayer player;
 
         public GameWindow()
         {
@@ -182,13 +182,13 @@ namespace TestForm
 
                 if (MainMenu.ChosenFaction == Faction.Inferno)
                 {
-                    var inferno = new InfernoCastle();
+                    var inferno = new InfernoCastle(player.Gold);
 
                     inferno.Show();
                 }
                 else
                 {
-                    var heaven = new HeavenCastle();
+                    var heaven = new HeavenCastle(player.Gold);
 
                     heaven.Show();
                 }
