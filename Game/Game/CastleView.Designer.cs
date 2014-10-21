@@ -74,7 +74,7 @@
             this.u1plus.Size = new System.Drawing.Size(38, 30);
             this.u1plus.TabIndex = 3;
             this.u1plus.UseVisualStyleBackColor = true;
-            this.u1plus.Click += new System.EventHandler(this.u1plus_Click);
+            //this.u1plus.Click += new System.EventHandler(this.u1plus_Click);
             // 
             // pictureBox1
             // 

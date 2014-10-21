@@ -32,11 +32,11 @@ namespace Game
 
         }
 
-        private void u1plus_Click(object sender, EventArgs e)
-        {
-            this.firstUnit.Text += 1;
-            log = this.firstUnit.Text;
-        }
+        //private void u1plus_Click(object sender, EventArgs e)
+        //{
+        //    this.firstUnit.Text += 1;
+        //    log = firstUnit.Text;
+        //}
 
         private void u1minus_Click(object sender, EventArgs e)
         {

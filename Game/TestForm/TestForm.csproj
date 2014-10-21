@@ -61,13 +61,25 @@
     <Compile Include="Field\Cell.cs" />
     <Compile Include="Field\Map.cs" />
     <Compile Include="Field\MapCell.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Map.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
     </Compile>
     <Compile Include="GameObject.cs" />
+    <Compile Include="HeavenCastle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeavenCastle.Designer.cs">
+      <DependentUpon>HeavenCastle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfernoCastle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfernoCastle.Designer.cs">
+      <DependentUpon>InfernoCastle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\IMeleeAttackable.cs" />
     <Compile Include="Interfaces\IRangeAttackable.cs" />
     <Compile Include="Interfaces\IUnit.cs" />
@@ -95,8 +107,14 @@
     <EmbeddedResource Include="CastleView.resx">
       <DependentUpon>CastleView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeavenCastle.resx">
+      <DependentUpon>HeavenCastle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfernoCastle.resx">
+      <DependentUpon>InfernoCastle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -160,6 +178,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heavenCastle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internoTown.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

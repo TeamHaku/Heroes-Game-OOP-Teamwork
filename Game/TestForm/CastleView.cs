@@ -16,6 +16,11 @@ namespace TestForm
         {
             InitializeComponent();
             goldBox.Text = gold.ToString();
+
+            //if (MainMenu.ChosenFaction == Faction.Heaven)
+            //{
+            //    MessageBox.Show("test");
+            //}
         }
 
         private void u1plus_Click(object sender, EventArgs e)

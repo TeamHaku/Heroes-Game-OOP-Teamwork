@@ -11,7 +11,16 @@
         private static Unit sister;
         private static Unit griffin;
         private static Unit celestial;
-        private static Dictionary<Unit, int> deffalutHeavenUnits;   
+        private static Dictionary<Unit, int> deffalutHeavenUnits;
+
+        static HeavenUnits()
+        {
+            Sentinel = sentinel;
+            Crossbowman = crossbowman;
+            Sister = sister;
+            Griffin = griffin;
+            Celestial = celestial;
+        }
 
         public static Unit Sentinel
         {

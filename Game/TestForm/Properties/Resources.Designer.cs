@@ -153,6 +153,26 @@ namespace TestForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap heavenCastle {
+            get {
+                object obj = ResourceManager.GetObject("heavenCastle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap internoTown {
+            get {
+                object obj = ResourceManager.GetObject("internoTown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lacerator {
             get {
                 object obj = ResourceManager.GetObject("Lacerator", resourceCulture);

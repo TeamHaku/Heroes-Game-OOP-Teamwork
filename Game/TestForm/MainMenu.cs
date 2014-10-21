@@ -34,6 +34,8 @@ namespace TestForm
             var gameStart = new GameWindow();
 
             gameStart.Show();
+
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
