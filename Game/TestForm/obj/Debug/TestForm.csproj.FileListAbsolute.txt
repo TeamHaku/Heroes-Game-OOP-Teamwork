@@ -7,3 +7,5 @@ C:\SoftUni\OOP\Team Haku\trunk\Game\TestForm\obj\Debug\TestForm.Properties.Resou
 C:\SoftUni\OOP\Team Haku\trunk\Game\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
 C:\SoftUni\OOP\Team Haku\trunk\Game\TestForm\obj\Debug\TestForm.exe
 C:\SoftUni\OOP\Team Haku\trunk\Game\TestForm\obj\Debug\TestForm.pdb
+C:\SoftUni\OOP\Team Haku\trunk\Game\TestForm\obj\Debug\TestForm.CastleView.resources
+C:\SoftUni\OOP\Team Haku\trunk\Game\TestForm\obj\Debug\TestForm.MainMenu.resources

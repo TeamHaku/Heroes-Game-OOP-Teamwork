@@ -17,5 +17,24 @@ namespace TestForm
             InitializeComponent();
             goldBox.Text = gold.ToString();
         }
+
+        private void u1plus_Click(object sender, EventArgs e)
+        {
+            var gold = int.Parse(goldBox.Text);
+            if (gold >= 100)
+            {
+                gold -= 100;
+                goldBox.Text = gold.ToString();
+            }
+            
+        }
+
+        private void u1minus_Click(object sender, EventArgs e)
+        {
+            var gold = int.Parse(goldBox.Text);
+            gold += 100;
+            goldBox.Text = gold.ToString();
+            
+        }
     }
 }
