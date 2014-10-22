@@ -1,6 +1,8 @@
 ﻿
 namespace TestForm
 {
+    using TestForm.Interfaces;
+
     public abstract class GameObject : IGameObject
     {
         private string name;

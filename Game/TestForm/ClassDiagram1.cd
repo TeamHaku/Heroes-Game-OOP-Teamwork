@@ -8,14 +8,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="TestForm.Cost" Collapsed="true">
-    <Position X="15.75" Y="0.5" Width="1.5" />
+    <Position X="7" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
       <FileName>Cost.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TestForm.Engine" Collapsed="true">
-    <Position X="17.5" Y="0.5" Width="1.5" />
+    <Position X="15.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Engine.cs</FileName>
@@ -27,6 +27,7 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAYAA=</HashCode>
       <FileName>GameObject.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="TestForm.HeavenCastle" Collapsed="true">
     <Position X="14" Y="1.5" Width="1.5" />
@@ -65,49 +66,49 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TestForm.Field.BattleField" Collapsed="true">
-    <Position X="12.25" Y="0.5" Width="1.5" />
+    <Position X="5.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Field\BattleField.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TestForm.Field.BattlefieldCell" Collapsed="true">
-    <Position X="2.75" Y="5.75" Width="1.5" />
+    <Position X="7.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>Field\BattlefieldCell.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TestForm.Field.Cell" Collapsed="true">
-    <Position X="1.75" Y="4.5" Width="1.5" />
+    <Position X="6.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Field\Cell.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TestForm.Field.MapCell" Collapsed="true">
-    <Position X="0.5" Y="5.75" Width="1.5" />
+    <Position X="5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Field\MapCell.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TestForm.Player.EnemyPlayer" Collapsed="true">
-    <Position X="7.5" Y="3.25" Width="1.5" />
+    <Position X="8.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Player\EnemyPlayer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TestForm.Player.LivePlayer" Collapsed="true">
-    <Position X="9.75" Y="3.25" Width="1.5" />
+    <Position X="10.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>Player\LivePlayer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TestForm.Player.Player" Collapsed="true">
-    <Position X="8.75" Y="1.75" Width="1.5" />
+    <Position X="9.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA=</HashCode>
       <FileName>Player\Player.cs</FileName>
@@ -127,40 +128,33 @@
     </TypeIdentifier>
   </Class>
   <Class Name="TestForm.Units.HeavenUnit" Collapsed="true">
-    <Position X="3" Y="3.25" Width="1.5" />
+    <Position X="2" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACgAAAAAAAAABAAAAAQAEAAAABAAAQAAAQEAAAEoA=</HashCode>
       <FileName>Units\HeavenUnit.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TestForm.Units.InfernoUnit" Collapsed="true">
-    <Position X="5.25" Y="3.25" Width="1.5" />
+    <Position X="3.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgABAAIAAQAAADAAAAAyAAAEAgAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>Units\InfernoUnit.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TestForm.Units.PointsRange" Collapsed="true">
-    <Position X="17.5" Y="1.5" Width="1.5" />
+    <Position X="12.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAIAAAAAAAAAAAAA=</HashCode>
       <FileName>Units\PointsRange.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="TestForm.Field.Map" Collapsed="true">
-    <Position X="12.25" Y="3.75" Width="1.5" />
+    <Position X="10" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Field\Map.cs</FileName>
     </TypeIdentifier>
   </Struct>
-  <Interface Name="TestForm.Interfaces.IMeleeAttackable" Collapsed="true">
-    <Position X="14" Y="5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IMeleeAttackable.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Interface Name="TestForm.Interfaces.IPlayer" Collapsed="true">
     <Position X="15.75" Y="5" Width="1.5" />
     <TypeIdentifier>
@@ -168,22 +162,22 @@
       <FileName>Interfaces\IPlayer.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="TestForm.Interfaces.IRangeAttackable" Collapsed="true">
-    <Position X="17.5" Y="5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IRangeAttackable.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Interface Name="TestForm.Interfaces.IUnit" Collapsed="true">
-    <Position X="12.25" Y="5.75" Width="1.5" />
+    <Position X="12.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAACAAAAAAAAABAAAIAAAAAAAAAAAwAAAAA=</HashCode>
       <FileName>Interfaces\IUnit.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Interface Name="TestForm.Interfaces.IGameObject" Collapsed="true">
+    <Position X="14" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Interfaces\IGameObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Enum Name="TestForm.Faction" Collapsed="true">
-    <Position X="12.25" Y="6.75" Width="1.5" />
+    <Position X="14.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Faction.cs</FileName>

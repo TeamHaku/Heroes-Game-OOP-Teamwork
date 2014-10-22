@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TestForm
+namespace TestForm.Interfaces
 {
-    class IGameObject
+    public interface IGameObject
     {
+        int X { get; set; }
+
+        int Y { get; set; }
     }
 }
