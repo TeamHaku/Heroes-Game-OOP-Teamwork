@@ -73,12 +73,6 @@
     <Compile Include="HeavenCastle.Designer.cs">
       <DependentUpon>HeavenCastle.cs</DependentUpon>
     </Compile>
-    <Compile Include="InfernoCastle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InfernoCastle.Designer.cs">
-      <DependentUpon>InfernoCastle.cs</DependentUpon>
-    </Compile>
     <Compile Include="Interfaces\IMeleeAttackable.cs" />
     <Compile Include="Interfaces\IRangeAttackable.cs" />
     <Compile Include="Interfaces\IUnit.cs" />
@@ -111,9 +105,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HeavenCastle.resx">
       <DependentUpon>HeavenCastle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InfernoCastle.resx">
-      <DependentUpon>InfernoCastle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>

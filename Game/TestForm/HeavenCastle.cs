@@ -19,16 +19,15 @@ namespace TestForm
         public HeavenCastle()
         {
             InitializeComponent();
-            UnitsCount();
-<<<<<<< .mine            textBox6.Text = GameWindow.Player.Gold.ToString();
-=======            switch (MainMenu.ChosenFaction)
+
+            switch (MainMenu.ChosenFaction)
             {
                 case Faction.Heaven: DrawHeavenCastle();
                     break;
                 case Faction.Inferno: DrawInfernoCastle();
                     break;
-            }
->>>>>>> .theirs        }
+            } 
+        }
 
         private void DrawHeavenCastle()
         {
@@ -45,7 +44,7 @@ namespace TestForm
             textBox4.Text = HeavenUnits.Griffin.Count.ToString();
             textBox5.Text = HeavenUnits.Celestial.Count.ToString();
 
-            textBox6.Text = GameWindow.player.Gold.ToString();
+            textBox6.Text = GameWindow.Player.Gold.ToString();
         }
 
         private void DrawInfernoCastle()
@@ -63,7 +62,7 @@ namespace TestForm
             textBox4.Text = InfernoCreatures.Lacerator.Count.ToString();
             textBox5.Text = InfernoCreatures.PitLord.Count.ToString();
 
-            textBox6.Text = GameWindow.player.Gold.ToString();
+            textBox6.Text = GameWindow.Player.Gold.ToString();
         }
         
         private void InsertHeavenUnit(object sender, MouseEventArgs e)
