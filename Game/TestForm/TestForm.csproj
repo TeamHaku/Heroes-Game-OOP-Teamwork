@@ -60,6 +60,8 @@
     <Compile Include="Field\Cell.cs" />
     <Compile Include="Field\Map.cs" />
     <Compile Include="Field\MapCell.cs" />
+    <Compile Include="Interfaces\IGameObject.cs" />
+    <Compile Include="Interfaces\IPlayer.cs" />
     <Compile Include="Map.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,11 +69,11 @@
       <DependentUpon>Map.cs</DependentUpon>
     </Compile>
     <Compile Include="GameObject.cs" />
-    <Compile Include="HeavenCastle.cs">
+    <Compile Include="CastleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HeavenCastle.Designer.cs">
-      <DependentUpon>HeavenCastle.cs</DependentUpon>
+    <Compile Include="CastleForm.Designer.cs">
+      <DependentUpon>CastleForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IMeleeAttackable.cs" />
     <Compile Include="Interfaces\IRangeAttackable.cs" />
@@ -93,8 +95,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Units\HeavenUnits.cs" />
-    <Compile Include="Units\InfernoCreatures.cs" />
+    <Compile Include="Units\HeavenUnit.cs" />
+    <Compile Include="Units\InfernoUnit.cs" />
     <Compile Include="Units\PointsRange.cs" />
     <Compile Include="Units\Unit.cs" />
     <EmbeddedResource Include="BattlefieldForm.resx">
@@ -103,8 +105,8 @@
     <EmbeddedResource Include="Map.resx">
       <DependentUpon>Map.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HeavenCastle.resx">
-      <DependentUpon>HeavenCastle.cs</DependentUpon>
+    <EmbeddedResource Include="CastleForm.resx">
+      <DependentUpon>CastleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>

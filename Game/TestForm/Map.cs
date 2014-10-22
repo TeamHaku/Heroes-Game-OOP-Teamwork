@@ -148,9 +148,9 @@ namespace TestForm
             }
             else if (type == "castle")
             {
-                var heaven = new HeavenCastle();
+                var castle = new CastleForm();
 
-                heaven.Show();
+                castle.Show();
             }
             else if (type == "chest")
             {
