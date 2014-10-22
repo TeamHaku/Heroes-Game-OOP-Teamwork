@@ -68,18 +68,18 @@ namespace TestForm
             }
 
             int i = 1;
-            foreach (var warUnit in GameWindow.Player.WarUnits.Keys)
-            {
-                battleField.BattlefieldCells[i, 0].CellUnit = warUnit;
-                i += 2;
-            }
+            //foreach (var warUnit in GameWindow.Player.WarUnits.Keys)
+            //{
+            //    battleField.BattlefieldCells[i, 0].CellUnit = warUnit;
+            //    i += 2;
+            //}
 
             i = 1;
-            foreach (var unit in GameWindow.Enemies[0].WarUnits.Keys)
-            {
-                battleField.BattlefieldCells[i, 9].CellUnit = unit;
-                i += 2;
-            }
+            //foreach (var unit in GameWindow.Enemies[0].WarUnits.Keys)
+            //{
+            //    battleField.BattlefieldCells[i, 9].CellUnit = unit;
+            //    i += 2;
+            //}
 
             return battleField;
         }

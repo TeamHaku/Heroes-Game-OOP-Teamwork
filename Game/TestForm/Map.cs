@@ -131,18 +131,9 @@ namespace TestForm
             }
             else if (type == "castle")
             {
-                if (MainMenu.ChosenFaction == Faction.Inferno)
-                {
-                    var inferno = new InfernoCastle();
+                var heaven = new HeavenCastle();
 
-                    inferno.Show();
-                }
-                else
-                {
-                    var heaven = new HeavenCastle();
-
-                    heaven.Show();
-                }
+                heaven.Show();
             }
             else if (type == "chest")
             {
