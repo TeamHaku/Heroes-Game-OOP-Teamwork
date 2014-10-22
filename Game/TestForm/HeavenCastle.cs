@@ -45,21 +45,29 @@ namespace TestForm
             {
                 textBox2.Text = (int.Parse(textBox2.Text) + 1).ToString();
                 textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Crossbowman.Cost.PriceInGold).ToString();
+                HeavenUnits.Crossbowman.Count++;
+                GameWindow.player.Gold -= HeavenUnits.Crossbowman.Cost.PriceInGold;
             }
             else if (sender == button6)
             {
                 textBox3.Text = (int.Parse(textBox3.Text) + 1).ToString();
                 textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Sister.Cost.PriceInGold).ToString();
+                HeavenUnits.Sister.Count++;
+                GameWindow.player.Gold -= HeavenUnits.Sister.Cost.PriceInGold;
             }
             else if (sender == button8)
             {
                 textBox4.Text = (int.Parse(textBox4.Text) + 1).ToString();
                 textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Griffin.Cost.PriceInGold).ToString();
+                HeavenUnits.Griffin.Count++;
+                GameWindow.player.Gold -= HeavenUnits.Griffin.Cost.PriceInGold;
             }
             else if (sender == button10)
             {
                 textBox5.Text = (int.Parse(textBox5.Text) + 1).ToString();
                 textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Celestial.Cost.PriceInGold).ToString();
+                HeavenUnits.Celestial.Count++;
+                GameWindow.player.Gold -= HeavenUnits.Celestial.Cost.PriceInGold;
             }
         }
 

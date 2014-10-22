@@ -2,3 +2,5 @@ C:\SoftUni\OOP\Team Haku\trunk\Game\Game\bin\Debug\Game.exe
 C:\SoftUni\OOP\Team Haku\trunk\Game\Game\bin\Debug\Game.pdb
 C:\SoftUni\OOP\Team Haku\trunk\Game\Game\obj\Debug\Game.exe
 C:\SoftUni\OOP\Team Haku\trunk\Game\Game\obj\Debug\Game.pdb
+C:\SoftUni\OOP\Teamwork\trunk\Game\Game\obj\Debug\Game.exe
+C:\SoftUni\OOP\Teamwork\trunk\Game\Game\obj\Debug\Game.pdb
