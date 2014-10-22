@@ -12,6 +12,5 @@ namespace TestForm.Field
         }
 
         public Image Image { get; set; }    
-
     }
 }

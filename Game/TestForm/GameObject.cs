@@ -5,6 +5,13 @@ namespace TestForm
     {
         private string name;
 
+        protected GameObject(string name, int x, int y)
+        {
+            this.name = name;
+            this.X = x;
+            this.Y = y;
+        }
+
         public int X { get; set; }
 
         public int Y { get; set; }
@@ -13,14 +20,6 @@ namespace TestForm
         {
             get { return this.name; }
             set { this.name = value; }
-        }
-
-        protected GameObject(string name, int x, int y)
-        {
-            this.name = name;
-            this.X = x;
-            this.Y = y;
-        }
-           
+        }  
     }
 }

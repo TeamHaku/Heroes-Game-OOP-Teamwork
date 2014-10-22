@@ -8,11 +8,9 @@ namespace TestForm.Player
 {
     public class EnemyPlayer : Player
     {
-        public EnemyPlayer(Faction faction, Dictionary<Unit, int> units)
+        public EnemyPlayer(Faction faction, IList<Unit> units)
             : base(faction, units)
         {
         }
-
-        public ICollection<Unit> Units { get; set; }
     }
 }

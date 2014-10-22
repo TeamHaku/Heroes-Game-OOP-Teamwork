@@ -1,22 +1,28 @@
 ﻿#define DEBUG
+//#undef DEBUG
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TestForm
 {
+    using TestForm;
     using TestForm.Field;
     using TestForm.Player;
-    using TestForm.Properties;
     using TestForm.Units;
+    using TestForm.Properties;
     
     public partial class GameWindow : Form
     {
-        public static LivePlayer Player { get; set; }
-
-        public static List<EnemyPlayer> Enemies { get; set; }
+        public static LivePlayer player;
 
         public GameWindow()
         {
@@ -27,40 +33,15 @@ namespace TestForm
 
         private void InitializeGame()
         {
-            this.InitPlayer();
-            this.InitEnemyies();
-            //player.Hero.Name = MainMenu.Nickname;
-        }
-
-        private void InitEnemyies()
-        {
-            Enemies = new List<EnemyPlayer>
+            if (MainMenu.ChosenFaction == Faction.Inferno)
             {
-                new EnemyPlayer(Faction.Inferno, InfernoCreatures.DeffaultUnits)   
-            };
-        }
-
-        private void InitPlayer()
-        {
-            Dictionary<Unit, int> units = new Dictionary<Unit, int>();
-            switch (MainMenu.ChosenFaction)
-            {
-                case Faction.Heaven:
-                    units = HeavenUnits.DeffaultUnits;
-                    break;
-                case Faction.Inferno:
-                    units = InfernoCreatures.DeffaultUnits;
-                    break;
+                player = new LivePlayer(MainMenu.ChosenFaction, InfernoCreatures.DeffaultUnits, 1000);
             }
-
-            Player = new LivePlayer(
-                MainMenu.ChosenFaction,
-                Hero.DeffaultHero,
-                units,
-                10000);
+            else
+            {
+                player = new LivePlayer(MainMenu.ChosenFaction, HeavenUnits.DeffaultUnits, 1000);
+            }
         }
-
-        
 
         public void DrawMap()
         {
@@ -75,6 +56,7 @@ namespace TestForm
                         {
                             MapCell cell = new MapCell(row, col, Resources.earth);
                             string name = "not recognized";
+
                             switch (line[col])
                             {
                                 case 'W':
@@ -107,7 +89,7 @@ namespace TestForm
                                     break;
                             }
 
-                            this.Controls.Add(this.generateButton(cell, name));
+                            this.Controls.Add(generateButton(cell, name));
                         }
                     }
                 }
@@ -127,7 +109,7 @@ namespace TestForm
             butt.FlatStyle = 0;
             butt.BackgroundImageLayout = ImageLayout.Stretch;
             butt.Image = cell.Image;
-            butt.Location = new Point(cell.Y * 30, cell.X * 30);
+            butt.Location = new Point(cell.Y*30, cell.X*30);
             butt.Name = name; //string.Format("{0}-{1}", cell.Y, cell.X);
             butt.Size = new Size(30, 30);
             butt.Click += new EventHandler(this.button_Clicked);
@@ -168,32 +150,36 @@ namespace TestForm
             else if (type == "enemy") //Or other enemy
             {
                 log = "fight";
-                var battlefield = new BattlfieldForm();
-                battlefield.Show();
-                this.WindowState = FormWindowState.Minimized;
-
-
             }
             else if (type == "castle")
             {
+                //var castle = new CastleView(player.Gold);
+
+                //castle.Show();
+
                 if (MainMenu.ChosenFaction == Faction.Inferno)
                 {
-                    var inferno = new InfernoCastle(Player.Gold);
+                    var inferno = new InfernoCastle(player.Gold);
+
                     inferno.Show();
                 }
                 else
                 {
-                    var heaven = new HeavenCastle(Player.Gold);
+                    var heaven = new HeavenCastle(player.Gold);
+
                     heaven.Show();
                 }
 
                 log = "enter your castle";
+                
             }
             else if (type == "chest")
             {
                 log = "collect tresure if path available";
-                Player.Gold += 1000;
-                textBox1.Text = Player.Gold.ToString();
+
+                player.Gold += 1000;
+
+                textBox1.Text = player.Gold.ToString();
             }
 
             this.gameLog.Text = log + Environment.NewLine + this.gameLog.Text;

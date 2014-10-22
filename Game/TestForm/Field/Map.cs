@@ -8,11 +8,10 @@ namespace TestForm.Field
 {
     public sealed class Map
     {
-        public MapCell[,] MapCells { get; set; }
-
         public Map(MapCell[,] mapCells)
         {
             this.MapCells = mapCells;
         }
+        public MapCell[,] MapCells { get; set; }
     }
 }

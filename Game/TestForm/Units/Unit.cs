@@ -18,7 +18,7 @@ namespace TestForm
         private int healthPoints;
         private int squareMovements;
 
-        public Unit(PointsRange attackPoints, PointsRange defence, int healthPoints, int squareMovements, Cost cost, Image image, string name) 
+        public Unit(PointsRange attackPoints, PointsRange defence, int healthPoints, int squareMovements, Cost cost, Image image, string name, int count) 
             : base(name, 0, 0)
         {
             this.AttackPoints = attackPoints;
@@ -27,26 +27,45 @@ namespace TestForm
             this.SquareMovements = squareMovements;
             this.Cost = cost;
             this.Image = image;
+            this.Count = count;
         }
 
         public Cost Cost { get; set; }
 
         public PointsRange Defence
         {
-            get { return this.defence; }
-            set { this.defence = value; }
+            get 
+            {
+                return this.defence;
+            }
+            set 
+            { 
+                this.defence = value; 
+            }
         }
 
         public PointsRange AttackPoints
         {
-            get { return this.attackPoints; }
-            set { this.attackPoints = value; }
+            get
+            {
+                return this.attackPoints; 
+            }
+            set 
+            {
+                this.attackPoints = value; 
+            }
         }
 
         public int HealthPoints
         {
-            get { return this.healthPoints; }
-            private set { this.healthPoints = value; }
+            get 
+            {
+                return this.healthPoints; 
+            }
+            private set 
+            {
+                this.healthPoints = value; 
+            }
         }
 
 
@@ -56,7 +75,6 @@ namespace TestForm
             {
                 return this.squareMovements;
             }
-
             private set
             {
                 this.squareMovements = value;
@@ -64,6 +82,8 @@ namespace TestForm
         }
 
         public Image Image { get; set; }
+
+        public int Count { get; set; }
 
         public void Attack()
         {

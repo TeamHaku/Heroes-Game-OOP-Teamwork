@@ -3,7 +3,6 @@
     public enum Faction 
     {
         Heaven,
-        Inferno,
-        Necropolis,
+        Inferno
     }
 }

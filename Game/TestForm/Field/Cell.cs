@@ -8,16 +8,14 @@ namespace TestForm.Field
 {
     public abstract class Cell 
     {
-        private static int sizeInPixels = 20;
-
-        public int X { get; set; }
-
-        public int Y { get; set; }
-
         protected Cell(int x, int y)
         {
             this.X = x;
             this.Y = y;
         }
+
+        public int X { get; set; }
+
+        public int Y { get; set; }
     }
 }

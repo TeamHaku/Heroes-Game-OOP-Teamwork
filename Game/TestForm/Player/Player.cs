@@ -8,22 +8,26 @@ namespace TestForm.Player
 {
     public abstract class Player
     {
-        // Units - Number
-        private Dictionary<Unit, int> warUnits =
-            new Dictionary<Unit, int>();
+        private IList<Unit> units;
 
-        protected Player(Faction faction, Dictionary<Unit, int> warUnits)
+        protected Player(Faction faction, IList<Unit> units)
         {
             this.Faction = faction;
-            this.WarUnits = warUnits;
+            this.Units = units;
         }
 
         public Faction Faction { get; private set; }
 
-        public Dictionary<Unit, int> WarUnits
+        public IList<Unit> Units
         {
-            get { return this.warUnits; }
-            set { this.warUnits = value; }
+            get 
+            {
+                return this.units; 
+            }
+            set
+            {
+                this.units = value; 
+            }
         }
     }
 }

@@ -11,26 +11,61 @@ using System.Windows.Forms;
 namespace TestForm
 {
     using TestForm.Units;
+    using TestForm.Player;
 
     public partial class HeavenCastle : Form
     {
         public HeavenCastle(int gold)
         {
             InitializeComponent();
+            UnitsCount();
+
             textBox6.Text = gold.ToString();
-            DisplayUnits();
         }
 
-        private void DisplayUnits()
+        private void UnitsCount()
         {
+            textBox1.Text = HeavenUnits.Sentinel.Count.ToString();
+            textBox2.Text = HeavenUnits.Crossbowman.Count.ToString();
+            textBox3.Text = HeavenUnits.Sister.Count.ToString();
+            textBox4.Text = HeavenUnits.Griffin.Count.ToString();
+            textBox5.Text = HeavenUnits.Celestial.Count.ToString();
+        }
 
-            foreach (var key in GameWindow.Player.WarUnits.Keys)
+        private void AddUnit(object sender, MouseEventArgs e)
+        {
+            if (sender == button1)
             {
-                
+                textBox1.Text = (int.Parse(textBox1.Text) + 1).ToString();
+                textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Sentinel.Cost.PriceInGold).ToString();
+                HeavenUnits.Sentinel.Count++;
+                GameWindow.player.Gold -= HeavenUnits.Sentinel.Cost.PriceInGold;
+            }
+            else if (sender == button4)
+            {
+                textBox2.Text = (int.Parse(textBox2.Text) + 1).ToString();
+                textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Crossbowman.Cost.PriceInGold).ToString();
+            }
+            else if (sender == button6)
+            {
+                textBox3.Text = (int.Parse(textBox3.Text) + 1).ToString();
+                textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Sister.Cost.PriceInGold).ToString();
+            }
+            else if (sender == button8)
+            {
+                textBox4.Text = (int.Parse(textBox4.Text) + 1).ToString();
+                textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Griffin.Cost.PriceInGold).ToString();
+            }
+            else if (sender == button10)
+            {
+                textBox5.Text = (int.Parse(textBox5.Text) + 1).ToString();
+                textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Celestial.Cost.PriceInGold).ToString();
             }
         }
 
+        //private void Shop()
+        //{
 
-
+        //}
     }
 }

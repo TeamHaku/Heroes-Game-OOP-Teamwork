@@ -46,21 +46,21 @@
             // 
             this.textBoxX.Location = new System.Drawing.Point(652, 12);
             this.textBoxX.Name = "textBoxX";
-            this.textBoxX.Size = new System.Drawing.Size(116, 25);
+            this.textBoxX.Size = new System.Drawing.Size(116, 22);
             this.textBoxX.TabIndex = 0;
             // 
             // textBoxY
             // 
             this.textBoxY.Location = new System.Drawing.Point(652, 40);
             this.textBoxY.Name = "textBoxY";
-            this.textBoxY.Size = new System.Drawing.Size(116, 25);
+            this.textBoxY.Size = new System.Drawing.Size(116, 22);
             this.textBoxY.TabIndex = 1;
             // 
             // textBoxType
             // 
             this.textBoxType.Location = new System.Drawing.Point(652, 68);
             this.textBoxType.Name = "textBoxType";
-            this.textBoxType.Size = new System.Drawing.Size(116, 25);
+            this.textBoxType.Size = new System.Drawing.Size(116, 22);
             this.textBoxType.TabIndex = 2;
             // 
             // gameLog
@@ -76,7 +76,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(649, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 18);
+            this.label1.Size = new System.Drawing.Size(70, 14);
             this.label1.TabIndex = 4;
             this.label1.Text = "Game Log:";
             // 
@@ -84,7 +84,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(658, 532);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(104, 25);
+            this.textBox1.Size = new System.Drawing.Size(104, 22);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "1000";
             // 
@@ -100,7 +100,7 @@
             // 
             // GameWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
