@@ -41,26 +41,18 @@ namespace TestForm
             else if (sender == button4)
             {
                 AddUnit(textBox2, HeavenUnits.Crossbowman);
-                HeavenUnits.Crossbowman.Count++;
-                GameWindow.player.Gold -= HeavenUnits.Crossbowman.Cost.PriceInGold;
             }
             else if (sender == button6)
             {
                 AddUnit(textBox3, HeavenUnits.Sister);
-                HeavenUnits.Sister.Count++;
-                GameWindow.player.Gold -= HeavenUnits.Sister.Cost.PriceInGold;
             }
             else if (sender == button8)
             {
                 AddUnit(textBox4, HeavenUnits.Griffin);
-                HeavenUnits.Griffin.Count++;
-                GameWindow.player.Gold -= HeavenUnits.Griffin.Cost.PriceInGold;
             }
             else if (sender == button10)
             {
                 AddUnit(textBox5, HeavenUnits.Celestial);
-                HeavenUnits.Celestial.Count++;
-                GameWindow.player.Gold -= HeavenUnits.Celestial.Cost.PriceInGold;
             }
         }
 
