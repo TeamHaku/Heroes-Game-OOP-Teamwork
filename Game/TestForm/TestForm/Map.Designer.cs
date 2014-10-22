@@ -48,7 +48,6 @@
             this.Name = "GameWindow";
             this.ShowIcon = false;
             this.Text = "Map";
-            this.TopMost = true;
             this.ResumeLayout(false);
 
         }

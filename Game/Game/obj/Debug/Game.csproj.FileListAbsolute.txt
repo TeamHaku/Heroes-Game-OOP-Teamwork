@@ -6,3 +6,5 @@ C:\SoftUni\OOP\Teamwork\trunk\Game\Game\obj\Debug\Game.exe
 C:\SoftUni\OOP\Teamwork\trunk\Game\Game\obj\Debug\Game.pdb
 C:\Users\Hristo\Desktop\heroes\trunk\Game\Game\obj\Debug\Game.exe
 C:\Users\Hristo\Desktop\heroes\trunk\Game\Game\obj\Debug\Game.pdb
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\Game\obj\Debug\Game.exe
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\Game\obj\Debug\Game.pdb

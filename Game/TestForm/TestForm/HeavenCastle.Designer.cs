@@ -308,7 +308,6 @@
             this.Name = "HeavenCastle";
             this.ShowIcon = false;
             this.Text = "Heaven";
-            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

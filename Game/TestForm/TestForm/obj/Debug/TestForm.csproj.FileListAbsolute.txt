@@ -1,0 +1,12 @@
+C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\bin\Debug\TestForm.exe.config
+C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\bin\Debug\TestForm.exe
+C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\bin\Debug\TestForm.pdb
+C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\obj\Debug\TestForm.csprojResolveAssemblyReference.cache
+C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\obj\Debug\TestForm.GameWindow.resources
+C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\obj\Debug\TestForm.HeavenCastle.resources
+C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\obj\Debug\TestForm.InfernoCastle.resources
+C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\obj\Debug\TestForm.MainMenu.resources
+C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\obj\Debug\TestForm.Properties.Resources.resources
+C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
+C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\obj\Debug\TestForm.exe
+C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\obj\Debug\TestForm.pdb
