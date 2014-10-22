@@ -87,7 +87,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AddUnit);
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.InsertUnit);
             // 
             // pictureBox2
             // 
@@ -118,7 +118,7 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "+";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AddUnit);
+            this.button4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.InsertUnit);
             // 
             // textBox2
             // 
@@ -145,7 +145,7 @@
             this.button6.TabIndex = 10;
             this.button6.Text = "+";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AddUnit);
+            this.button6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.InsertUnit);
             // 
             // textBox3
             // 
@@ -184,7 +184,7 @@
             this.button8.TabIndex = 14;
             this.button8.Text = "+";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AddUnit);
+            this.button8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.InsertUnit);
             // 
             // textBox4
             // 
@@ -223,7 +223,7 @@
             this.button10.TabIndex = 18;
             this.button10.Text = "+";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AddUnit);
+            this.button10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.InsertUnit);
             // 
             // textBox5
             // 

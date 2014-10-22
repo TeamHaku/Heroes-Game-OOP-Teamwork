@@ -15,12 +15,12 @@ namespace TestForm
 
     public partial class HeavenCastle : Form
     {
-        public HeavenCastle(int gold)
+        public HeavenCastle()
         {
             InitializeComponent();
             UnitsCount();
 
-            textBox6.Text = gold.ToString();
+            textBox6.Text = GameWindow.player.Gold.ToString();
         }
 
         private void UnitsCount()
@@ -32,48 +32,51 @@ namespace TestForm
             textBox5.Text = HeavenUnits.Celestial.Count.ToString();
         }
 
-        private void AddUnit(object sender, MouseEventArgs e)
+        private void InsertUnit(object sender, MouseEventArgs e)
         {
             if (sender == button1)
             {
-                textBox1.Text = (int.Parse(textBox1.Text) + 1).ToString();
-                textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Sentinel.Cost.PriceInGold).ToString();
-                HeavenUnits.Sentinel.Count++;
-                GameWindow.player.Gold -= HeavenUnits.Sentinel.Cost.PriceInGold;
+                AddUnit(textBox1, HeavenUnits.Sentinel);
             }
             else if (sender == button4)
             {
-                textBox2.Text = (int.Parse(textBox2.Text) + 1).ToString();
-                textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Crossbowman.Cost.PriceInGold).ToString();
+                AddUnit(textBox2, HeavenUnits.Crossbowman);
                 HeavenUnits.Crossbowman.Count++;
                 GameWindow.player.Gold -= HeavenUnits.Crossbowman.Cost.PriceInGold;
             }
             else if (sender == button6)
             {
-                textBox3.Text = (int.Parse(textBox3.Text) + 1).ToString();
-                textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Sister.Cost.PriceInGold).ToString();
+                AddUnit(textBox3, HeavenUnits.Sister);
                 HeavenUnits.Sister.Count++;
                 GameWindow.player.Gold -= HeavenUnits.Sister.Cost.PriceInGold;
             }
             else if (sender == button8)
             {
-                textBox4.Text = (int.Parse(textBox4.Text) + 1).ToString();
-                textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Griffin.Cost.PriceInGold).ToString();
+                AddUnit(textBox4, HeavenUnits.Griffin);
                 HeavenUnits.Griffin.Count++;
                 GameWindow.player.Gold -= HeavenUnits.Griffin.Cost.PriceInGold;
             }
             else if (sender == button10)
             {
-                textBox5.Text = (int.Parse(textBox5.Text) + 1).ToString();
-                textBox6.Text = (int.Parse(textBox6.Text) - HeavenUnits.Celestial.Cost.PriceInGold).ToString();
+                AddUnit(textBox5, HeavenUnits.Celestial);
                 HeavenUnits.Celestial.Count++;
                 GameWindow.player.Gold -= HeavenUnits.Celestial.Cost.PriceInGold;
             }
         }
 
-        //private void Shop()
-        //{
-
-        //}
+        private void AddUnit(TextBox textbox, Unit unit)
+        {
+            if (GameWindow.player.Gold >= unit.Cost.PriceInGold)
+            {
+                textbox.Text = (int.Parse(textbox.Text) + 1).ToString();
+                textBox6.Text = (int.Parse(textBox6.Text) - unit.Cost.PriceInGold).ToString();
+                unit.Count++;
+                GameWindow.player.Gold -= unit.Cost.PriceInGold;
+            }
+            else
+            {
+                MessageBox.Show("Not enough gold!");
+            }
+        }
     }
 }

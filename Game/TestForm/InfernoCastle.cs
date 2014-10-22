@@ -15,12 +15,12 @@ namespace TestForm
 
     public partial class InfernoCastle : Form
     {
-        public InfernoCastle(int gold)
+        public InfernoCastle()
         {
             InitializeComponent();
             UnitsCount();
 
-            textBox6.Text = gold.ToString();
+            textBox6.Text = GameWindow.player.Gold.ToString();
         }
 
         private void UnitsCount()
@@ -30,6 +30,45 @@ namespace TestForm
             textBox3.Text = InfernoCreatures.Lilim.Count.ToString();
             textBox4.Text = InfernoCreatures.Lacerator.Count.ToString();
             textBox5.Text = InfernoCreatures.PitLord.Count.ToString();
+        }
+
+        private void InsertUnit(object sender, MouseEventArgs e)
+        {
+            if (sender == button1)
+            {
+                AddUnit(textBox1, InfernoCreatures.Maniac);
+            }
+            else if (sender == button4)
+            {
+                AddUnit(textBox2, InfernoCreatures.Cerberus);
+            }
+            else if (sender == button6)
+            {
+                AddUnit(textBox3, InfernoCreatures.Lilim);
+            }
+            else if (sender == button8)
+            {
+                AddUnit(textBox4, InfernoCreatures.Lacerator);
+            }
+            else if (sender == button10)
+            {
+                AddUnit(textBox5, InfernoCreatures.PitLord);
+            }
+        }
+
+        private void AddUnit(TextBox textbox, Unit unit)
+        {
+            if (GameWindow.player.Gold >= unit.Cost.PriceInGold)
+            {
+                textbox.Text = (int.Parse(textbox.Text) + 1).ToString();
+                textBox6.Text = (int.Parse(textBox6.Text) - unit.Cost.PriceInGold).ToString();
+                unit.Count++;
+                GameWindow.player.Gold -= unit.Cost.PriceInGold;
+            }
+            else
+            {
+                MessageBox.Show("Not enough gold!");
+            }
         }
     }
 }

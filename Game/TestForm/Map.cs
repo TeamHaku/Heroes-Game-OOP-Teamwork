@@ -105,10 +105,10 @@ namespace TestForm
         private Button generateButton(MapCell cell, string name)
         {
             Button butt = new Button();
-            butt.BackColor = Color.White;
+            butt.BackColor = Color.Transparent;
             butt.FlatStyle = 0;
             butt.BackgroundImageLayout = ImageLayout.Stretch;
-            butt.Image = cell.Image;
+            butt.BackgroundImage = cell.Image;
             butt.Location = new Point(cell.Y*30, cell.X*30);
             butt.Name = name; //string.Format("{0}-{1}", cell.Y, cell.X);
             butt.Size = new Size(30, 30);
@@ -159,13 +159,13 @@ namespace TestForm
 
                 if (MainMenu.ChosenFaction == Faction.Inferno)
                 {
-                    var inferno = new InfernoCastle(player.Gold);
+                    var inferno = new InfernoCastle();
 
                     inferno.Show();
                 }
                 else
                 {
-                    var heaven = new HeavenCastle(player.Gold);
+                    var heaven = new HeavenCastle();
 
                     heaven.Show();
                 }
@@ -180,6 +180,8 @@ namespace TestForm
                 player.Gold += 1000;
 
                 textBox1.Text = player.Gold.ToString();
+
+                MessageBox.Show("You earned 1000 gold!");
             }
 
             this.gameLog.Text = log + Environment.NewLine + this.gameLog.Text;

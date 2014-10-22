@@ -84,6 +84,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(658, 532);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(104, 22);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "1000";
@@ -103,7 +104,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BackgroundImage = global::TestForm.Properties.Resources.earth;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(788, 601);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);

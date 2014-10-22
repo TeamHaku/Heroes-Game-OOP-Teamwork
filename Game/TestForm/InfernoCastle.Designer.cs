@@ -71,6 +71,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(79, 462);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(105, 22);
             this.textBox6.TabIndex = 44;
             // 
@@ -102,11 +103,13 @@
             this.button10.TabIndex = 41;
             this.button10.Text = "+";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.InsertUnit);
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(115, 286);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(69, 22);
             this.textBox5.TabIndex = 40;
             // 
@@ -139,11 +142,13 @@
             this.button8.TabIndex = 37;
             this.button8.Text = "+";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.InsertUnit);
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(115, 226);
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(69, 22);
             this.textBox4.TabIndex = 36;
             // 
@@ -176,11 +181,13 @@
             this.button6.TabIndex = 33;
             this.button6.Text = "+";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.InsertUnit);
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(115, 166);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(69, 22);
             this.textBox3.TabIndex = 32;
             // 
@@ -213,11 +220,13 @@
             this.button4.TabIndex = 29;
             this.button4.Text = "+";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.InsertUnit);
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(115, 106);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(69, 22);
             this.textBox2.TabIndex = 28;
             // 
@@ -241,11 +250,13 @@
             this.button1.TabIndex = 26;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.InsertUnit);
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(115, 46);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(69, 22);
             this.textBox1.TabIndex = 25;
             // 
