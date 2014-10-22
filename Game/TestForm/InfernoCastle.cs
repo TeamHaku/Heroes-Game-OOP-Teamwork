@@ -20,7 +20,7 @@ namespace TestForm
             InitializeComponent();
             UnitsCount();
 
-            textBox6.Text = GameWindow.player.Gold.ToString();
+            textBox6.Text = GameWindow.Player.Gold.ToString();
         }
 
         private void UnitsCount()
@@ -58,12 +58,12 @@ namespace TestForm
 
         private void AddUnit(TextBox textbox, Unit unit)
         {
-            if (GameWindow.player.Gold >= unit.Cost.PriceInGold)
+            if (GameWindow.Player.Gold >= unit.Cost.PriceInGold)
             {
                 textbox.Text = (int.Parse(textbox.Text) + 1).ToString();
                 textBox6.Text = (int.Parse(textBox6.Text) - unit.Cost.PriceInGold).ToString();
                 unit.Count++;
-                GameWindow.player.Gold -= unit.Cost.PriceInGold;
+                GameWindow.Player.Gold -= unit.Cost.PriceInGold;
             }
             else
             {

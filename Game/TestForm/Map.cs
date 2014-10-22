@@ -22,7 +22,9 @@ namespace TestForm
     
     public partial class GameWindow : Form
     {
-        public static LivePlayer player;
+        public static LivePlayer Player { get; set; }
+
+        public static List<EnemyPlayer> Enemies { get; set; }
 
         public GameWindow()
         {
@@ -35,11 +37,11 @@ namespace TestForm
         {
             if (MainMenu.ChosenFaction == Faction.Inferno)
             {
-                player = new LivePlayer(MainMenu.ChosenFaction, InfernoCreatures.DeffaultUnits, 1000);
+                Player = new LivePlayer(MainMenu.ChosenFaction, InfernoCreatures.DeffaultUnits, 1000);
             }
             else
             {
-                player = new LivePlayer(MainMenu.ChosenFaction, HeavenUnits.DeffaultUnits, 1000);
+                Player = new LivePlayer(MainMenu.ChosenFaction, HeavenUnits.DeffaultUnits, 1000);
             }
         }
 
@@ -86,20 +88,20 @@ namespace TestForm
                                 break;
                         }
 
-                        this.Controls.Add(generateButton(cell, name));
+                        this.Controls.Add(GenerateButton(cell, name));
                     }
                 }
             }
         }
 
-        private Button generateButton(MapCell cell, string name)
+        private Button GenerateButton(MapCell cell, string name)
         {
             Button butt = new Button();
             butt.BackColor = Color.Transparent;
             butt.FlatStyle = 0;
             butt.BackgroundImageLayout = ImageLayout.Stretch;
             butt.BackgroundImage = cell.Image;
-            butt.Location = new Point(cell.Y*30, cell.X*30);
+            butt.Location = new Point(cell.Y * 30, cell.X * 30);
             butt.Name = name;
             butt.Size = new Size(30, 30);
             butt.Click += new EventHandler(this.button_Clicked);
@@ -147,7 +149,7 @@ namespace TestForm
                 this.Controls.Add(playerPosition);
                 this.Controls.Add(triggeredButton);
 
-                player.Gold += 1000;
+                Player.Gold += 1000;
 
                 MessageBox.Show("You earned 1000 gold!");
             }
