@@ -13,3 +13,15 @@ C:\Users\Hristo\Desktop\heroes\trunk\Game\TestForm\obj\Debug\TestForm.pdb
 D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\TestForm\bin\Debug\TestForm.exe.config
 D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\TestForm\obj\Debug\TestForm.exe
 D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\TestForm\obj\Debug\TestForm.pdb
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\bin\Debug\TestForm.exe.config
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\obj\Debug\TestForm.exe
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\obj\Debug\TestForm.pdb
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\bin\Debug\TestForm.exe
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\bin\Debug\TestForm.pdb
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\obj\Debug\TestForm.csprojResolveAssemblyReference.cache
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\obj\Debug\TestForm.GameWindow.resources
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\obj\Debug\TestForm.HeavenCastle.resources
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\obj\Debug\TestForm.InfernoCastle.resources
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\obj\Debug\TestForm.MainMenu.resources
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\obj\Debug\TestForm.Properties.Resources.resources
+D:\Za uchene\Програмиране\Soft Uni\OOP\TeamWork\Last-Repo\trunk\Game\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache

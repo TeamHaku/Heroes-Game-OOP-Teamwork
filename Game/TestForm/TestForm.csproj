@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattlefieldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BattlefieldForm.Designer.cs">
+      <DependentUpon>BattlefieldForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cost.cs" />
     <Compile Include="Faction.cs" />
     <Compile Include="Field\BattleField.cs" />
@@ -97,6 +103,9 @@
     <Compile Include="Units\InfernoCreatures.cs" />
     <Compile Include="Units\PointsRange.cs" />
     <Compile Include="Units\Unit.cs" />
+    <EmbeddedResource Include="BattlefieldForm.resx">
+      <DependentUpon>BattlefieldForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Map.resx">
       <DependentUpon>Map.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +183,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\internoTown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grass2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

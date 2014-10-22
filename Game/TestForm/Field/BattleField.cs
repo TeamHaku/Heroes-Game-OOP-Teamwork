@@ -8,6 +8,11 @@ namespace TestForm.Field
 {
     public class BattleField
     {
-        public readonly BattlefieldCell[,] BattlefieldCells = new BattlefieldCell[8, 8];
+        public BattlefieldCell[,] BattlefieldCells { get; set; }
+
+        public BattleField(BattlefieldCell[,] battlefield)
+        {
+            this.BattlefieldCells = battlefield;
+        }
     }
 }
