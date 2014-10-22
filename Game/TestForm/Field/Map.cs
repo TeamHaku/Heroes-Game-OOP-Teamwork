@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace TestForm.Field
 {
-    public sealed class Map
+    public struct Map
     {
         public Map(MapCell[,] mapCells)
+            : this()
         {
             this.MapCells = mapCells;
         }
+
         public MapCell[,] MapCells { get; set; }
     }
 }

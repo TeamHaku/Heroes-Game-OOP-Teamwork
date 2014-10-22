@@ -11,7 +11,7 @@ namespace TestForm
     using TestForm.Interfaces;
     using TestForm.Units;
 
-    public class Unit : GameObject, IUnit
+    public abstract class Unit : GameObject, IUnit
     {
         private PointsRange attackPoints;
         private PointsRange defence;

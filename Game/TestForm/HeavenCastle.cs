@@ -26,8 +26,10 @@ namespace TestForm
                     break;
                 case Faction.Inferno: DrawInfernoCastle();
                     break;
-            } 
+
+            }
         }
+
 
         private void DrawHeavenCastle()
         {
@@ -38,11 +40,11 @@ namespace TestForm
             pictureBox4.BackgroundImage = Resources.Griffin;
             pictureBox5.BackgroundImage = Resources.Celestial;
 
-            textBox1.Text = HeavenUnits.Sentinel.Count.ToString();
-            textBox2.Text = HeavenUnits.Crossbowman.Count.ToString();
-            textBox3.Text = HeavenUnits.Sister.Count.ToString();
-            textBox4.Text = HeavenUnits.Griffin.Count.ToString();
-            textBox5.Text = HeavenUnits.Celestial.Count.ToString();
+            textBox1.Text = HeavenUnit.Sentinel.Count.ToString();
+            textBox2.Text = HeavenUnit.Crossbowman.Count.ToString();
+            textBox3.Text = HeavenUnit.Sister.Count.ToString();
+            textBox4.Text = HeavenUnit.Griffin.Count.ToString();
+            textBox5.Text = HeavenUnit.Celestial.Count.ToString();
 
             textBox6.Text = GameWindow.Player.Gold.ToString();
         }
@@ -56,11 +58,11 @@ namespace TestForm
             pictureBox4.BackgroundImage = Resources.Lacerator;
             pictureBox5.BackgroundImage = Resources.PitLord;
 
-            textBox1.Text = InfernoCreatures.Maniac.Count.ToString();
-            textBox2.Text = InfernoCreatures.Cerberus.Count.ToString();
-            textBox3.Text = InfernoCreatures.Lilim.Count.ToString();
-            textBox4.Text = InfernoCreatures.Lacerator.Count.ToString();
-            textBox5.Text = InfernoCreatures.PitLord.Count.ToString();
+            textBox1.Text = InfernoUnit.Maniac.Count.ToString();
+            textBox2.Text = InfernoUnit.Cerberus.Count.ToString();
+            textBox3.Text = InfernoUnit.Lilim.Count.ToString();
+            textBox4.Text = InfernoUnit.Lacerator.Count.ToString();
+            textBox5.Text = InfernoUnit.PitLord.Count.ToString();
 
             textBox6.Text = GameWindow.Player.Gold.ToString();
         }
@@ -69,23 +71,23 @@ namespace TestForm
         {
             if (sender == button1)
             {
-                AddUnit(textBox1, HeavenUnits.Sentinel);
+                AddUnit(textBox1, HeavenUnit.Sentinel);
             }
             else if (sender == button4)
             {
-                AddUnit(textBox2, HeavenUnits.Crossbowman);
+                AddUnit(textBox2, HeavenUnit.Crossbowman);
             }
             else if (sender == button6)
             {
-                AddUnit(textBox3, HeavenUnits.Sister);
+                AddUnit(textBox3, HeavenUnit.Sister);
             }
             else if (sender == button8)
             {
-                AddUnit(textBox4, HeavenUnits.Griffin);
+                AddUnit(textBox4, HeavenUnit.Griffin);
             }
             else if (sender == button10)
             {
-                AddUnit(textBox5, HeavenUnits.Celestial);
+                AddUnit(textBox5, HeavenUnit.Celestial);
             }
         }
 
@@ -93,23 +95,23 @@ namespace TestForm
         {
             if (sender == button1)
             {
-                AddUnit(textBox1, InfernoCreatures.Maniac);
+                AddUnit(textBox1, InfernoUnit.Maniac);
             }
             else if (sender == button4)
             {
-                AddUnit(textBox2, InfernoCreatures.Cerberus);
+                AddUnit(textBox2, InfernoUnit.Cerberus);
             }
             else if (sender == button6)
             {
-                AddUnit(textBox3, InfernoCreatures.Lilim);
+                AddUnit(textBox3, InfernoUnit.Lilim);
             }
             else if (sender == button8)
             {
-                AddUnit(textBox4, InfernoCreatures.Lacerator);
+                AddUnit(textBox4, InfernoUnit.Lacerator);
             }
             else if (sender == button10)
             {
-                AddUnit(textBox5, InfernoCreatures.PitLord);
+                AddUnit(textBox5, InfernoUnit.PitLord);
             }
         }
 

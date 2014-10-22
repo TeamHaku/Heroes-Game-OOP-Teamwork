@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace TestForm.Field
 {
-    public abstract class Cell 
+    public abstract class Cell : GameObject
     {
         protected Cell(int x, int y)
+            : base("Cell", x , y)
         {
             this.X = x;
             this.Y = y;
         }
-
-        public int X { get; set; }
-
-        public int Y { get; set; }
     }
 }

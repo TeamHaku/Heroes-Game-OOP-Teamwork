@@ -1,7 +1,7 @@
 ﻿
 namespace TestForm
 {
-    public abstract class GameObject
+    public abstract class GameObject : IGameObject
     {
         private string name;
 

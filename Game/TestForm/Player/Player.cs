@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace TestForm.Player
 {
-    public abstract class Player
+    using TestForm.Interfaces;
+
+    public abstract class Player : GameObject, IPlayer
     {
         private IList<Unit> units;
 
         protected Player(Faction faction, IList<Unit> units)
+            : base("Player", 0, 0)
         {
             this.Faction = faction;
             this.Units = units;

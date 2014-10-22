@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TestForm.BattlefieldForm" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACIAAACAAAAAAAAAAAAAAIIAAA=</HashCode>
+      <FileName>BattlefieldForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Cost" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Cost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Engine" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.GameObject" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.HeavenCastle" Collapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAIhAAASAAAICBAACAQABCIcwrAAAAEAAACABAAAA=</HashCode>
+      <FileName>HeavenCastle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.MainMenu" Collapsed="true">
+    <Position X="15.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBAAAAACACAAAQAACAAAACAAAIAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.GameWindow" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAAAAAAAACAAACCAAEAAAAAgAIAAQABQAA=</HashCode>
+      <FileName>Map.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Hero" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIEAAAAAAAAAAQAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Player\Hero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Unit" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAACAEAAAAAAARQAAIAAABAAAAAAAwIAAAI=</HashCode>
+      <FileName>Units\Unit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TestForm.Field.BattleField" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Field\BattleField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Field.BattlefieldCell" Collapsed="true">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Field\BattlefieldCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Field.Cell" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Field\Cell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Field.MapCell" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Field\MapCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Player.EnemyPlayer" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Player\EnemyPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Player.LivePlayer" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Player\LivePlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Player.Player" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA=</HashCode>
+      <FileName>Player\Player.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TestForm.Properties.Resources" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgChQFAAIgAAAAAgAABkAEAEQgQACAVABAAAAAAEYI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Properties.Settings" Collapsed="true">
+    <Position X="14" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Units.HeavenUnit" Collapsed="true">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACgAAAAAAAAABAAAAAQAEAAAABAAAQAAAQEAAAEoA=</HashCode>
+      <FileName>Units\HeavenUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Units.InfernoUnit" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgABAAIAAQAAADAAAAAyAAAEAgAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Units\InfernoUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestForm.Units.PointsRange" Collapsed="true">
+    <Position X="17.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Units\PointsRange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TestForm.Field.Map" Collapsed="true">
+    <Position X="12.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Field\Map.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="TestForm.Interfaces.IMeleeAttackable" Collapsed="true">
+    <Position X="14" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMeleeAttackable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TestForm.Interfaces.IPlayer" Collapsed="true">
+    <Position X="15.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TestForm.Interfaces.IRangeAttackable" Collapsed="true">
+    <Position X="17.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRangeAttackable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TestForm.Interfaces.IUnit" Collapsed="true">
+    <Position X="12.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAACAAAAAAAAABAAAIAAAAAAAAAAAwAAAAA=</HashCode>
+      <FileName>Interfaces\IUnit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TestForm.Faction" Collapsed="true">
+    <Position X="12.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Faction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

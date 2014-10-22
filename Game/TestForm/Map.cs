@@ -35,13 +35,27 @@ namespace TestForm
 
         private void InitializeGame()
         {
+            this.CreatePlayer();
+            this.CreatEnemies();
+        }
+
+        private void CreatEnemies()
+        {
+            Enemies = new List<EnemyPlayer>
+            {
+                new EnemyPlayer(Faction.Inferno, InfernoUnit.DeffaultUnits)             
+            };
+        }
+
+        private void CreatePlayer()
+        {
             if (MainMenu.ChosenFaction == Faction.Inferno)
             {
-                Player = new LivePlayer(MainMenu.ChosenFaction, InfernoCreatures.DeffaultUnits, 1000);
+                Player = new LivePlayer(MainMenu.ChosenFaction, InfernoUnit.DeffaultUnits, 1000);
             }
             else
             {
-                Player = new LivePlayer(MainMenu.ChosenFaction, HeavenUnits.DeffaultUnits, 1000);
+                Player = new LivePlayer(MainMenu.ChosenFaction, HeavenUnit.DeffaultUnits, 1000);
             }
         }
 
@@ -129,7 +143,8 @@ namespace TestForm
             }
             else if (type == "enemy")
             {
-                // fight
+                var battlefield = new BattlefieldForm();
+                battlefield.Show();
             }
             else if (type == "castle")
             {
