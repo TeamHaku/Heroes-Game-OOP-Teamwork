@@ -46,6 +46,12 @@ namespace TestForm
             textBox4.Text = HeavenUnit.Griffin.Count.ToString();
             textBox5.Text = HeavenUnit.Celestial.Count.ToString();
 
+            label1.Text = HeavenUnit.Sentinel.Name;
+            label2.Text = HeavenUnit.Crossbowman.Name;
+            label3.Text = HeavenUnit.Sister.Name;
+            label4.Text = HeavenUnit.Griffin.Name;
+            label5.Text = HeavenUnit.Celestial.Name;
+
             textBox6.Text = GameWindow.Player.Gold.ToString();
         }
 
@@ -63,6 +69,12 @@ namespace TestForm
             textBox3.Text = InfernoUnit.Lilim.Count.ToString();
             textBox4.Text = InfernoUnit.Lacerator.Count.ToString();
             textBox5.Text = InfernoUnit.PitLord.Count.ToString();
+
+            label1.Text = InfernoUnit.Maniac.Name;
+            label2.Text = InfernoUnit.Cerberus.Name;
+            label3.Text = InfernoUnit.Lilim.Name;
+            label4.Text = InfernoUnit.Lacerator.Name;
+            label5.Text = InfernoUnit.PitLord.Name;
 
             textBox6.Text = GameWindow.Player.Gold.ToString();
         }

@@ -144,6 +144,7 @@ namespace TestForm
             else if (type == "enemy")
             {
                 var battlefield = new BattlefieldForm();
+
                 battlefield.Show();
             }
             else if (type == "castle")
